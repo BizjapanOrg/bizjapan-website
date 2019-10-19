@@ -32,4 +32,5 @@ module.exports = {
     // `gatsby-plugin-offline`,
     `gatsby-plugin-layout`,
   ],
+  pathPrefix: "/bizjapan-new-website",
 }
