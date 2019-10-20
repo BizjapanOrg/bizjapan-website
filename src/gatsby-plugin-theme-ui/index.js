@@ -1,14 +1,14 @@
 export default {
   colors: {
-    text: "#333",
-    background: "#fff",
-    primary: "#639",
-    secondary: "#ff6347",
+    black: "#000000",
+    grey: "#F5F5F5",
+    white: "#fff",
+    red: "#EB4025",
+    light_red: "#F3A9A7",
   },
   fonts: {
-    body: "system-ui, sans-serif",
-    heading: "system-ui, sans-serif",
-    monospace: "Menlo, monospace",
+    body: "Noto Sans JP, sans-serif",
+    heading: "Lato, sans-serif",
   },
   fontWeights: {
     body: 400,

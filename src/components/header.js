@@ -9,8 +9,9 @@ const Header = () => (
       // this uses the value from `theme.space[4]`
       padding: 4,
       // these use values from `theme.colors`
-      color: "background",
-      backgroundColor: "primary",
+      color: "black",
+      backgroundColor: "red",
+      fontFamily: "heading",
     }}
   >
     This is Header

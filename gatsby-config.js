@@ -32,6 +32,13 @@ module.exports = {
     // `gatsby-plugin-offline`,
     `gatsby-plugin-layout`,
     "gatsby-plugin-theme-ui",
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`Lato`, `Noto Sans JP`],
+        display: "swap",
+      },
+    },
   ],
   pathPrefix: "/bizjapan-new-website",
 }
