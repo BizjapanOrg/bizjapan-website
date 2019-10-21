@@ -7,8 +7,8 @@ export default {
     light_red: "#F3A9A7",
   },
   fonts: {
-    body: "Noto Sans JP, sans-serif",
-    heading: "Lato, sans-serif",
+    body: "'Noto Sans JP', sans-serif",
+    heading: "'Lato', sans-serif",
   },
   fontWeights: {
     body: 400,
