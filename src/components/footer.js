@@ -1,6 +1,6 @@
 // import { Link } from "gatsby"
 import React from "react"
 
-const Header = () => <header>This is Footer</header>
+const Footer = () => <footer>This is Footer</footer>
 
-export default Header
+export default Footer
