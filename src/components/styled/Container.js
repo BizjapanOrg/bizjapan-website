@@ -2,11 +2,13 @@ import React from "react"
 import styled from "styled-components"
 
 const Container = styled.section`
-  box-sizing: border-box;
-  min-width: 260px;
-  width: 65%;
-  padding: 7.81% 0;
   position: static;
+  box-sizing: border-box;
+  background-color: red;
+  width: 65%;
+  min-width: 260px;
+  padding: 7.81% 0;
+  margin: 0 auto;
 `
 
 export default ({ children }) => (
