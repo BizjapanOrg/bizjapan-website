@@ -5,13 +5,14 @@ import SEO from "../components/seo"
 // Import styled components
 import Container from "../components/styled/Container"
 import Button from "../components/styled/Button"
+import Title from "../components/styled/Title"
 
 const IndexPage = () => (
   <Container>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+    <Title>Test Title</Title>
+    <p>First Paragraph. Welcome to your new Gatsby site.</p>
+    <p>Second Paragraph. Now go build something great.</p>
     <Link to="/page-2/">Go to page 2</Link>
     <Button>Test</Button>
   </Container>
