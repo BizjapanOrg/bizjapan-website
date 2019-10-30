@@ -12,11 +12,11 @@ const ProjectCard = props => (
 const ProjectCardStyle = styled.div`
   background: blue;
   width: 230px;
-  height: 345px;
+  min-width: 230px;
   border-radius: 20px;
   background-color: white;
   box-shadow: 6px 6px 30px 0 rgba(0, 0, 0, 0.16);
-  margin: 1em;
+  margin: 0 0.5em 1.45em 0.5em;
 `
 const CardName = styled.p`
   padding: 0.5em 1em;
