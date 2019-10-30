@@ -1,10 +1,34 @@
 import React from "react"
+import styled from "styled-components"
 
 const ProjectCard = props => (
-  <div>
-    <p>{props.name}</p>
-    <p>{props.desc}</p>
-  </div>
+  <ProjectCardStyle>
+    <CardName> {props.name} </CardName>
+    <CardDesc> {props.desc} </CardDesc>
+  </ProjectCardStyle>
 )
+
+// Define style of ProjectCard
+const ProjectCardStyle = styled.div`
+  background: blue;
+  width: 230px;
+  height: 345px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 6px 6px 30px 0 rgba(0, 0, 0, 0.16);
+  margin: 1em;
+`
+const CardName = styled.p`
+  padding: 0.5em 1em;
+  margin: 0;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-align: center;
+`
+const CardDesc = styled.p`
+  padding: 0.5em 1em;
+  margin: 0;
+  font-size:0.8em;
+`
 
 export default ProjectCard
