@@ -1,8 +1,8 @@
 import React from "react"
 
 // Import styled components
-import Container from "../components/styled/Container"
-import Title from "../components/styled/Title"
+import Container from "./styled/Container"
+import Title from "./styled/Title"
 
 const AboutUs = () => (
   <Container>
