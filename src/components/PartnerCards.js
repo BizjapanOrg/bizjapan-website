@@ -18,7 +18,19 @@ const PartnerCards = () => (
           }}
         >
           {data.images.edges.map(image => {
-            return <Img fluid={image.node.childImageSharp.fluid} />
+            return (
+              <Img
+                fixed={image.node.childImageSharp.fixed}
+                imgStyle={{
+                  objectFit: "contain",
+                  objectPosition: "50% 50%",
+                }}
+                style={{
+                  width: `30vw`,
+                  maxWidth: ` 220px`,
+                }}
+              />
+            )
           })}
         </div>
       )
@@ -35,8 +47,8 @@ const query = graphql`
           relativePath
           name
           childImageSharp {
-            fluid(maxWidth: 200, maxHeight: 200) {
-              ...GatsbyImageSharpFluid
+            fixed(height: 100) {
+              ...GatsbyImageSharpFixed
             }
           }
         }
