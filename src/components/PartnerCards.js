@@ -28,6 +28,7 @@ const PartnerCards = () => (
                 style={{
                   width: `30vw`,
                   maxWidth: ` 220px`,
+                  margin: `0 0.5em 1.45em 0.5em`,
                 }}
               />
             )
