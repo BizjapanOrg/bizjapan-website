@@ -5,6 +5,7 @@ import SEO from "../components/seo"
 import AboutUs from "../components/AboutUs"
 import Values from "../components/Values"
 import Platform from "../components/Platform"
+import Partners from "../components/Partners"
 
 const IndexPage = () => (
   <>
@@ -12,6 +13,7 @@ const IndexPage = () => (
     <AboutUs />
     <Values />
     <Platform />
+    <Partners />
   </>
 )
 
