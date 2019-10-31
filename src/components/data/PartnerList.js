@@ -1,4 +1,18 @@
 export default [
-  { name: 'aaa', logo: 'aaa' },
-  { name: 'bbb', logo: 'bbb' }
-];
+  { alt: "aidemy", path: "../../images/partners/aidemy.jpg" },
+  { alt: "cambridge", path: "../../images/partners/cambridge.png" },
+  { alt: "Doorkel", path: "../../images/partners/doorkel.png" },
+  { alt: "Global Brain", path: "../../images/partners/gb.png" },
+  { alt: "Hassyadai", path: "../../images/partners/hassyadai.png" },
+  { alt: "iBECK", path: "../../images/partners/ibeck.png" },
+  { alt: "leaveanest", path: "../../images/partners/leaveanest.png" },
+  { alt: "maedajuku", path: "../../images/partners/maedajuku.png" },
+  { alt: "mfc", path: "../../images/partners/mfc.jpg" },
+  { alt: "MyNavi", path: "../../images/partners/mynavi.png" },
+  { alt: "Nexgen", path: "../../images/partners/nexgen.png" },
+  { alt: "PrC", path: "../../images/partners/prc.png" },
+  { alt: "Progate", path: "../../images/partners/progate.png" },
+  { alt: "rashiku", path: "../../images/partners/rashiku.jpg" },
+  { alt: "SDM", path: "../../images/partners/sdm.png" },
+  { alt: "spotlab", path: "../../images/partners/spotlab.png" },
+]

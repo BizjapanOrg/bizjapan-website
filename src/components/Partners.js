@@ -10,17 +10,7 @@ import PartnerList from "./data/PartnerList"
 const Partners = () => (
   <Container>
     <Title>Partners</Title>
-    <div
-      style={{
-        display: `flex`,
-        flexDirection: `row`,
-        flexWrap: `wrap`,
-        justifyContent: `center`,
-        alignItems: `center`,
-      }}
-    >
-      <PartnerCards data={PartnerList} />
-    </div>
+    <PartnerCards data={PartnerList} />
   </Container>
 )
 
@@ -28,13 +18,32 @@ const PartnerCards = props => {
   var data = props.data
   const partners = data.map(partner => {
     return (
-      <li>
-        {partner.name} {partner.logo}
-      </li>
+      <div
+        style={{
+          width: `30vw`,
+          maxWidth: `220px`,
+          verticalAlign: `middle`,
+          margin: `0 0.5em 1.45em 0.5em`,
+        }}
+      >
+        {partner.alt}
+      </div>
     )
   })
 
-  return <ul>{partners}</ul>
+  return (
+    <div
+      style={{
+        display: `flex`,
+        flexDirection: `row`,
+        flexWrap: `wrap`,
+        justifyContent: `center`,
+        textAlign: `center`,
+      }}
+    >
+      {partners}
+    </div>
+  )
 }
 
 export default Partners
