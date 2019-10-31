@@ -2,7 +2,7 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-const ImageLoader = () => (
+const PartnerCards = () => (
   <StaticQuery
     query={query}
     // Render all the images.
@@ -45,4 +45,4 @@ const query = graphql`
   }
 `
 
-export default ImageLoader
+export default PartnerCards
