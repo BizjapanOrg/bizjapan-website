@@ -7,9 +7,21 @@ const ImageLoader = () => (
     query={query}
     // Render all the images.
     render={data => {
-      return data.images.edges.map(image => {
-        return <Img fluid={image.node.childImageSharp.fluid} />
-      })
+      return (
+        <div
+          style={{
+            display: `flex`,
+            flexDirection: `row`,
+            flexWrap: `wrap`,
+            justifyContent: `center`,
+            textAlign: `center`,
+          }}
+        >
+          {data.images.edges.map(image => {
+            return <Img fluid={image.node.childImageSharp.fluid} />
+          })}
+        </div>
+      )
     }}
   />
 )
