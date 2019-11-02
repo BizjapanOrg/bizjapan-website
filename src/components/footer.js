@@ -1,36 +1,107 @@
 import React from "react"
+import { StaticQuery, graphql } from "gatsby"
 import { Link } from "gatsby"
+import Img from "gatsby-image"
 
 const Footer = () => (
   <footer>
     <p>©2019 NPO Bizjapan</p>
-    <FooterNavi />
+    <FooterNavi list={naviList} />
+    <FooterSocialMedia />
   </footer>
 )
 
-const FooterNavi = () => (
-  <ul>
-    <li>
-      <Link to="/">- HOME</Link>
-    </li>
-    <li>
-      <Link to="/profile">- PROFILE</Link>
-    </li>
-    <li>
-      <a href="https://sites.google.com/bizjapan.org/recruiting-jp/home">
-        - JOIN
-      </a>
-    </li>
-    <li>
-      <Link to="/project">- PROJECT</Link>
-    </li>
-    <li>
-      <Link to="/report">- REPORT</Link>
-    </li>
-    <li>
-      <Link to="/">- CONTACT</Link>
-    </li>
-  </ul>
+var naviList = ["home", "project", "profile", "report", "join", "contact"]
+const FooterNavi = props => {
+  const naviItems = props.list.map(item => {
+    if (item === "join") {
+      return (
+        <li>
+          <a href="https://sites.google.com/bizjapan.org/recruiting-jp/home">
+            - JOIN
+          </a>
+        </li>
+      )
+    }
+    return (
+      <li key={item}>
+        <Link to={"/" + item}>{"- " + item.toUpperCase()}</Link>
+      </li>
+    )
+  })
+  return <ul>{naviItems}</ul>
+}
+
+const FooterSocialMedia = () => (
+  <StaticQuery
+    query={socialMediaQuery}
+    // Render all the images.
+    render={data => {
+      return (
+        <div
+          style={{
+            display: `flex`,
+            flexDirection: `row`,
+            flexWrap: `wrap`,
+            justifyContent: `center`,
+            textAlign: `center`,
+          }}
+        >
+          {data.images.edges.map(image => {
+            return (
+              <Img
+                fixed={image.node.childImageSharp.fixed}
+                imgStyle={{
+                  objectFit: "contain",
+                  objectPosition: "50% 50%",
+                }}
+                style={{
+                  width: `30vw`,
+                  maxWidth: ` 220px`,
+                  margin: `0 0.5em 1.45em 0.5em`,
+                }}
+              />
+            )
+          })}
+        </div>
+      )
+    }}
+  />
 )
+
+// Import all the images in partners folder.
+const socialMediaQuery = graphql`
+  query {
+    images: allFile(filter: { relativeDirectory: { eq: "socialmedia" } }) {
+      edges {
+        node {
+          relativePath
+          name
+          childImageSharp {
+            fixed(height: 100) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
+      }
+    }
+  }
+`
+
+// const FooterSocialMedia = ({ data }) => (
+//   <>
+//     <p>Social Media</p>​
+//     <a href="https://twitter.com/bizjapanorg">
+//       <Img fixed={data.file.childImageSharp.fixed} />
+//       <img src="../images/socialmedia/twitter.png" />
+//     </a>
+//     <a href="https://www.facebook.com/Bizjapan.org/">
+//       <img src="../images/socialmedia/facebook.png" />
+//     </a>
+//     <a href="https://note.mu/bizjapan">
+//       <img src="../images/socialmedia/note.png" />
+//     </a>
+//   </>
+// )
 
 export default Footer
