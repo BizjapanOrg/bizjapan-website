@@ -7,7 +7,7 @@ const Container = styled.section`
   background-color: red;
   width: 65%;
   min-width: 260px;
-  padding: 7.81% 0;
+  padding: 10em 0 0 0;
   margin: 0 auto;
 `
 
