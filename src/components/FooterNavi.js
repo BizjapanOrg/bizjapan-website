@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 // A list of pages
 const FooterNavi = props => {

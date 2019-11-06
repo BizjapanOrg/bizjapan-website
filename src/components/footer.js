@@ -6,6 +6,7 @@ import Container from "./styled/Container"
 // Import components.
 import FooterNavi from "./FooterNavi"
 import FooterSocialMedia from "./FooterSocialMedia"
+import FooterLogo from "./FooterLogo"
 
 const Footer = () => {
   return (
@@ -15,6 +16,7 @@ const Footer = () => {
           <p style={{ textAlign: `center` }}>©2019 NPO Bizjapan</p>
           <FooterNavi list={naviList} />
           <FooterSocialMedia />
+          <FooterLogo />
         </div>
       </Container>
     </footer>
