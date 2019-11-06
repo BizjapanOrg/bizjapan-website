@@ -16,7 +16,7 @@ const FooterNavi = props => {
   const naviItems = props.list.map(item => {
     if (item === "join") {
       return (
-        <li>
+        <li key={item}>
           <a href="https://sites.google.com/bizjapan.org/recruiting-jp/home">
             - JOIN
           </a>
@@ -38,32 +38,36 @@ const FooterSocialMedia = () => (
     // Render all the images.
     render={data => {
       return (
-        <div
+        <ul
           style={{
             display: `flex`,
             flexDirection: `row`,
             flexWrap: `wrap`,
             justifyContent: `center`,
             textAlign: `center`,
+            background: `black`,
+            listStyle: `none`,
           }}
         >
           {data.images.edges.map(image => {
             return (
-              <Img
-                fixed={image.node.childImageSharp.fixed}
-                imgStyle={{
-                  objectFit: "contain",
-                  objectPosition: "50% 50%",
-                }}
-                style={{
-                  width: `30vw`,
-                  maxWidth: ` 220px`,
-                  margin: `0 0.5em 1.45em 0.5em`,
-                }}
-              />
+              <li key={image.node.name}>
+                <Img
+                  fixed={image.node.childImageSharp.fixed}
+                  imgStyle={{
+                    objectFit: "contain",
+                    objectPosition: "50% 50%",
+                  }}
+                  style={{
+                    width: `30vw`,
+                    maxWidth: ` 220px`,
+                    margin: `0 0.5em 1.45em 0.5em`,
+                  }}
+                />
+              </li>
             )
           })}
-        </div>
+        </ul>
       )
     }}
   />
