@@ -31,9 +31,9 @@ const FooterSocialMedia = () => (
                     objectPosition: '50% 50%'
                   }}
                   style={{
-                    width: `3em`,
+                    width: `2.5em`,
                     maxWidth: ` 220px`,
-                    margin: `0 2em`
+                    margin: `0 4vw`
                   }}
                 />
               </li>
