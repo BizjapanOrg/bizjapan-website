@@ -602,8 +602,8 @@ pre tt:before,
 pre tt:after {
   content: '';
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 720px) {
   html {
-    font-size: 100%;
+    font-size: 0.75rem;
   }
 }
