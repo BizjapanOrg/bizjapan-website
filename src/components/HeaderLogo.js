@@ -1,21 +1,30 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
-const HeaderLogo = name => {
+const HeaderLogo = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "logo.png" }) {
+      placeholderImage: file(relativePath: { eq: "logo_black.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
+          fixed {
+            ...GatsbyImageSharpFixed
           }
         }
       }
     }
-  `)
+  `);
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
-}
+  return (
+    <Img
+      fluid={data.placeholderImage.childImageSharp.fixed}
+      imgStyle={{
+        objectFit: 'contain',
+        objectPosition: '50% 50%'
+      }}
+      style={{ height: `40px`, margin: `9px 0` }}
+    />
+  );
+};
 
-export default HeaderLogo
+export default HeaderLogo;
