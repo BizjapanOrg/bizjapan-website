@@ -5,23 +5,16 @@ import FooterNavi from './FooterNavi';
 import FooterSocialMedia from './FooterSocialMedia';
 import BlackLogo from './BlackLogo';
 
+import Container from './styled/Container';
+
 const Footer = () => {
   return (
     <footer
       style={{
-        padding: `5em 0`,
         backgroundColor: `#f2f2f2`
       }}
     >
-      <div
-        style={{
-          position: `static`,
-          boxSizing: `border-box`,
-          width: `65%`,
-          minWidth: `260px`,
-          margin: `0 auto`
-        }}
-      >
+      <Container>
         <div style={{ maxWidth: `600px`, margin: `0 auto` }}>
           <p style={{ textAlign: `center`, marginBottom: `2em` }}>
             ©2019 NPO Bizjapan
@@ -32,7 +25,7 @@ const Footer = () => {
             <BlackLogo />
           </div>
         </div>
-      </div>
+      </Container>
     </footer>
   );
 };
