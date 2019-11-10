@@ -6,7 +6,8 @@ const Container = styled.section`
   box-sizing: border-box;
   width: 65%;
   min-width: 260px;
-  padding: 10em 0 0 0;
+  max-width: 900px;
+  padding: 8em 0;
   margin: 0 auto;
 `;
 
