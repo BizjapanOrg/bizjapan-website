@@ -1,24 +1,38 @@
 import React from 'react';
 
-// Import styled components.
-import Container from './styled/Container';
-
 // Import components.
 import FooterNavi from './FooterNavi';
 import FooterSocialMedia from './FooterSocialMedia';
-import FooterLogo from './FooterLogo';
+import BlackLogo from './BlackLogo';
 
 const Footer = () => {
   return (
-    <footer>
-      <Container>
+    <footer
+      style={{
+        padding: `5em 0`,
+        backgroundColor: `#f2f2f2`
+      }}
+    >
+      <div
+        style={{
+          position: `static`,
+          boxSizing: `border-box`,
+          width: `65%`,
+          minWidth: `260px`,
+          margin: `0 auto`
+        }}
+      >
         <div style={{ maxWidth: `600px`, margin: `0 auto` }}>
-          <p style={{ textAlign: `center` }}>©2019 NPO Bizjapan</p>
+          <p style={{ textAlign: `center`, marginBottom: `2em` }}>
+            ©2019 NPO Bizjapan
+          </p>
           <FooterNavi list={naviList} />
           <FooterSocialMedia />
-          <FooterLogo />
+          <div style={{ width: `10em`, margin: `0 auto` }}>
+            <BlackLogo />
+          </div>
         </div>
-      </Container>
+      </div>
     </footer>
   );
 };
