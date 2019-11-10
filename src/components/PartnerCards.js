@@ -1,6 +1,6 @@
-import React from "react"
-import { StaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 const PartnerCards = () => (
   <StaticQuery
@@ -16,6 +16,7 @@ const PartnerCards = () => (
             justifyContent: `center`,
             textAlign: `center`,
             listStyle: `none`,
+            margin: `0`
           }}
         >
           {data.images.edges.map(image => {
@@ -24,23 +25,23 @@ const PartnerCards = () => (
                 <Img
                   fixed={image.node.childImageSharp.fixed}
                   imgStyle={{
-                    objectFit: "contain",
-                    objectPosition: "50% 50%",
+                    objectFit: 'contain',
+                    objectPosition: '50% 50%'
                   }}
                   style={{
                     width: `30vw`,
                     maxWidth: ` 220px`,
-                    margin: `0 0.5em 1.45em 0.5em`,
+                    margin: `0 0.5em 1.45em 0.5em`
                   }}
                 />
               </li>
-            )
+            );
           })}
         </ul>
-      )
+      );
     }}
   />
-)
+);
 
 // Import all the images in partners folder.
 const query = graphql`
@@ -59,6 +60,6 @@ const query = graphql`
       }
     }
   }
-`
+`;
 
-export default PartnerCards
+export default PartnerCards;
