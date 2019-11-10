@@ -1,7 +1,7 @@
 // import { Link } from "gatsby"
 import React from 'react';
 
-import HeaderLogo from './HeaderLogo';
+import BlackLogo from './BlackLogo';
 import HeaderNavi from './HeaderNavi';
 
 const Header = () => (
@@ -17,7 +17,7 @@ const Header = () => (
   >
     {/* logo */}
     <div style={{ float: `left`, width: `180px` }}>
-      <HeaderLogo />
+      <BlackLogo />
     </div>
     {/* HeaderNavi */}
     <HeaderNavi list={naviList} />
