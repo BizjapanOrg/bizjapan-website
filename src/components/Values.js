@@ -2,7 +2,6 @@ import React from 'react';
 
 // Import styled components
 import Container from './styled/Container';
-import Title from './styled/Title';
 
 const Values = () => (
   <div style={{ position: `relative` }}>
