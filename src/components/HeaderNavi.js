@@ -6,7 +6,10 @@ const HeaderNavi = props => {
     if (item === 'join') {
       return (
         <li key={item} style={{ float: `left`, marginRight: `3em` }}>
-          <a href='https://sites.google.com/bizjapan.org/recruiting-jp/home'>
+          <a
+            style={{ color: `black`, textDecoration: `none` }}
+            href='https://sites.google.com/bizjapan.org/recruiting-jp/home'
+          >
             JOIN
           </a>
         </li>
@@ -14,7 +17,13 @@ const HeaderNavi = props => {
     }
     return (
       <li key={item} style={{ float: `left`, marginRight: `3em` }}>
-        <Link to={'/' + item}>{item.toUpperCase()}</Link>
+        <Link
+          to={'/' + item}
+          style={{ color: `black`, textDecoration: `none` }}
+          activeStyle={{ textDecoration: `underline` }}
+        >
+          {item.toUpperCase()}
+        </Link>
       </li>
     );
   });
@@ -25,7 +34,8 @@ const HeaderNavi = props => {
         textAlign: `center`,
         margin: `0`,
         float: `right`,
-        fontWeight: `bold`
+        fontWeight: `bold`,
+        textDecoration: `none`
       }}
     >
       {naviItems}
