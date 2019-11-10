@@ -1,8 +1,8 @@
-import React from "react"
+import React from 'react';
 
 // Import styled components
-import Container from "./styled/Container"
-import Title from "./styled/Title"
+import Container from './styled/Container';
+import Title from './styled/Title';
 
 const AboutUs = () => (
   <Container>
@@ -26,6 +26,6 @@ const AboutUs = () => (
       a project of your own, with the belief in yourself and your critical eye.
     </p>
   </Container>
-)
+);
 
-export default AboutUs
+export default AboutUs;
