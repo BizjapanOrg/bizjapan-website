@@ -1,6 +1,6 @@
-import React from "react"
-import { StaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 // A list of Social Media
 const FooterSocialMedia = () => (
@@ -16,39 +16,34 @@ const FooterSocialMedia = () => (
             flexWrap: `wrap`,
             justifyContent: `center`,
             textAlign: `center`,
-            background: `black`,
             listStyle: `none`,
             margin: `0`,
+            marginBottom: `2em`
           }}
         >
           {data.images.edges.map(image => {
             return (
-              <li
-                key={image.node.name}
-                style={{
-                  padding: `1.5em`,
-                }}
-              >
+              <li key={image.node.name} style={{ margin: `0` }}>
                 <Img
                   fixed={image.node.childImageSharp.fixed}
                   imgStyle={{
-                    objectFit: "contain",
-                    objectPosition: "50% 50%",
+                    objectFit: 'contain',
+                    objectPosition: '50% 50%'
                   }}
                   style={{
                     width: `3em`,
                     maxWidth: ` 220px`,
-                    margin: `0 0.5em 1.45em 0.5em`,
+                    margin: `0 2em`
                   }}
                 />
               </li>
-            )
+            );
           })}
         </ul>
-      )
+      );
     }}
   />
-)
+);
 
 // Import all the logos of social media.
 const socialMediaQuery = graphql`
@@ -59,7 +54,7 @@ const socialMediaQuery = graphql`
           relativePath
           name
           childImageSharp {
-            fixed(height: 100) {
+            fixed(height: 50) {
               ...GatsbyImageSharpFixed
             }
           }
@@ -67,6 +62,6 @@ const socialMediaQuery = graphql`
       }
     }
   }
-`
+`;
 
-export default FooterSocialMedia
+export default FooterSocialMedia;

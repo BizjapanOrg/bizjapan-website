@@ -496,7 +496,7 @@ th {
   font-weight: bold;
 }
 li {
-  margin-bottom: calc(1.45rem / 2);
+  margin-bottom: 1em;
 }
 ol li {
   padding-left: 0;

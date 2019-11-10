@@ -17,7 +17,10 @@ const FooterNavi = props => {
       );
     }
     return (
-      <li key={item} style={{ width: `33%`, display: `inline-block` }}>
+      <li
+        key={item}
+        style={{ width: `33%`, display: `inline-block`, marginBottom: `1em` }}
+      >
         <Link
           style={{ color: `black`, textDecoration: `none` }}
           to={'/' + item}
@@ -33,7 +36,8 @@ const FooterNavi = props => {
       style={{
         listStyle: `none`,
         textAlign: `center`,
-        margin: `0`
+        margin: `0`,
+        marginBottom: `1em`
       }}
     >
       {naviItems}
