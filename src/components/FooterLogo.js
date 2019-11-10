@@ -1,6 +1,6 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 export default () => {
   const data = useStaticQuery(graphql`
@@ -13,17 +13,17 @@ export default () => {
         }
       }
     }
-  `)
+  `);
   return (
     <div style={{ width: `10em`, margin: `0 auto` }}>
       <Img
         fluid={data.file.childImageSharp.fluid}
-        alt="Logo white"
+        alt='Logo white'
         imgStyle={{
-          objectFit: "contain",
-          objectPosition: "50% 50%",
+          objectFit: 'contain',
+          objectPosition: '50% 50%'
         }}
       />
     </div>
-  )
-}
+  );
+};
