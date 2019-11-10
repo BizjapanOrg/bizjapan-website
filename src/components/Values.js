@@ -11,7 +11,7 @@ const Values = () => (
           color: `white`,
           textAlign: `center`,
           letterSpacing: `2px`,
-          marginBottom: `50px`
+          marginBottom: `1.5em`
         }}
       >
         Our Values
