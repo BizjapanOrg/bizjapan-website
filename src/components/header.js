@@ -8,10 +8,9 @@ const Header = () => (
   <header style={{ height: `70px`, padding: `20px 5%` }}>
     {/* logo */}
     <div style={{ float: `left`, width: `180px` }}>
-      {/* Imported from HeaderLogo.js */}
       <HeaderLogo />
     </div>
-
+    {/* HeaderNavi */}
     <HeaderNavi />
   </header>
 );
