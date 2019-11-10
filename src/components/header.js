@@ -15,6 +15,6 @@ const Header = () => (
   </header>
 );
 
-var naviList = ['home', 'project', 'profile', 'report', 'join'];
+var naviList = ['home', 'project', 'report', 'profile', 'join'];
 
 export default Header;

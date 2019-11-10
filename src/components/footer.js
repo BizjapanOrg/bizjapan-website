@@ -23,6 +23,6 @@ const Footer = () => {
   );
 };
 
-var naviList = ['home', 'project', 'profile', 'report', 'join', 'contact'];
+var naviList = ['home', 'project', 'report', 'profile', 'join', 'contact'];
 
 export default Footer;
