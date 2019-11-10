@@ -1,22 +1,39 @@
-import React from "react"
-import SEO from "../components/seo"
+import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 // import components
-import AboutUs from "../components/AboutUs"
-import Values from "../components/Values"
-import Platform from "../components/Platform"
-import Partners from "../components/Partners"
-import Contact from "../components/Contact"
+import SEO from '../components/seo';
+import AboutUs from '../components/AboutUs';
+import Values from '../components/Values';
+import Platform from '../components/Platform';
+import Partners from '../components/Partners';
+import Contact from '../components/Contact';
 
-const IndexPage = () => (
-  <>
-    <SEO title="Home" />
-    <AboutUs />
-    <Values />
-    <Platform />
-    <Partners />
-    <Contact />
-  </>
-)
+const IndexPage = () => {
+  const HomeTop = useStaticQuery(graphql`
+    query {
+      placeholderImage: file(relativePath: { eq: "topimage/home.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `);
 
-export default IndexPage
+  return (
+    <>
+      <SEO title='Home' />
+      <Img fluid={HomeTop.placeholderImage.childImageSharp.fluid} />
+      <AboutUs />
+      <Values />
+      <Platform />
+      <Partners />
+      <Contact />
+    </>
+  );
+};
+
+export default IndexPage;
