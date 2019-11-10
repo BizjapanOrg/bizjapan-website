@@ -11,8 +11,10 @@ const Header = () => (
       <HeaderLogo />
     </div>
     {/* HeaderNavi */}
-    <HeaderNavi />
+    <HeaderNavi list={naviList} />
   </header>
 );
+
+var naviList = ['home', 'project', 'profile', 'report', 'join'];
 
 export default Header;
