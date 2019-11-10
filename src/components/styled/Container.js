@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Container = styled.section`
   position: static;
   box-sizing: border-box;
-  width: 65%;
+  width: 90%;
   min-width: 260px;
   max-width: 900px;
   padding: 8em 0;
