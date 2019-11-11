@@ -15,14 +15,25 @@ const Header = () => (
     }}
   >
     {/* logo */}
-    <div style={{ float: `left`, width: `180px` }}>
+    <div style={{ float: `left`, width: `120px` }}>
       <BlackLogo />
     </div>
     {/* HeaderNavi */}
-    <HeaderNavi list={naviList} />
+    {/* <HeaderNavi list={naviList} /> */}
+    {/* New Codes here */}
+    {mobileOrDesktop()}
   </header>
 );
 
 var naviList = ['home', 'project', 'report', 'profile', 'join'];
+
+const mobileOrDesktop = () => {
+  var mq = window.matchMedia('(max-width: 720px)');
+  if (mq.matches) {
+    return;
+  } else {
+    return <HeaderNavi list={naviList} />;
+  }
+};
 
 export default Header;
