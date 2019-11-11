@@ -26,7 +26,9 @@ const IndexPage = () => {
   return (
     <>
       <SEO title='Home' />
-      <Img fluid={HomeTop.placeholderImage.childImageSharp.fluid} />
+      <div style={{ paddingTop: `60px` }}>
+        <Img fluid={HomeTop.placeholderImage.childImageSharp.fluid} />
+      </div>
       <AboutUs />
       <Values />
       <Platform />
