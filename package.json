@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "npo-bizjapan",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "NPO Bizjapan is a student organization founded in 2014, based in Japan.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Hiroki Kameyama  <vjtsx.45afv@gmail.com>",
   "dependencies": {
     "@emotion/core": "^10.0.21",
     "@mdx-js/react": "^1.5.1",
