@@ -22,22 +22,67 @@ const FooterSocialMedia = () => (
           }}
         >
           {data.images.edges.map(image => {
-            return (
-              <li key={image.node.name} style={{ margin: `0` }}>
-                <Img
-                  fixed={image.node.childImageSharp.fixed}
-                  imgStyle={{
-                    objectFit: 'contain',
-                    objectPosition: '50% 50%'
-                  }}
-                  style={{
-                    width: `2.5em`,
-                    maxWidth: ` 220px`,
-                    margin: `0 4vw`
-                  }}
-                />
-              </li>
-            );
+            switch (image.node.name) {
+              case 'note':
+                return (
+                  <li key={image.node.name} style={{ margin: `0` }}>
+                    <a href='https://note.mu/bizjapan'>
+                      <Img
+                        fixed={image.node.childImageSharp.fixed}
+                        imgStyle={{
+                          objectFit: 'contain',
+                          objectPosition: '50% 50%'
+                        }}
+                        style={{
+                          width: `2.5em`,
+                          maxWidth: ` 220px`,
+                          margin: `0 4vw`
+                        }}
+                      />
+                    </a>
+                  </li>
+                );
+              case 'facebook':
+                return (
+                  <li key={image.node.name} style={{ margin: `0` }}>
+                    <a href='https://www.facebook.com/Bizjapan.org/'>
+                      <Img
+                        fixed={image.node.childImageSharp.fixed}
+                        imgStyle={{
+                          objectFit: 'contain',
+                          objectPosition: '50% 50%'
+                        }}
+                        style={{
+                          width: `2.5em`,
+                          maxWidth: ` 220px`,
+                          margin: `0 4vw`
+                        }}
+                      />
+                    </a>
+                  </li>
+                );
+              case 'twitter':
+                return (
+                  <li key={image.node.name} style={{ margin: `0` }}>
+                    <a href='https://twitter.com/BizjapanOrg'>
+                      <Img
+                        fixed={image.node.childImageSharp.fixed}
+                        imgStyle={{
+                          objectFit: 'contain',
+                          objectPosition: '50% 50%'
+                        }}
+                        style={{
+                          width: `2.5em`,
+                          maxWidth: ` 220px`,
+                          margin: `0 4vw`
+                        }}
+                      />
+                    </a>
+                  </li>
+                );
+              default:
+                return console.log('error');
+            }
           })}
         </ul>
       );
