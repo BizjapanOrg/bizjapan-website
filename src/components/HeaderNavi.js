@@ -34,7 +34,6 @@ const HeaderNavi = props => {
         listStyle: `none`,
         textAlign: `center`,
         margin: `0`,
-        marginTop: `5px`,
         float: `right`,
         fontWeight: `bold`,
         textDecoration: `none`

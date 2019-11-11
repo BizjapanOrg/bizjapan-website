@@ -8,7 +8,7 @@ const Header = () => (
   <header
     style={{
       width: `100%`,
-      height: `70px`,
+      height: `60px`,
       padding: `20px 5%`,
       background: `white`,
       zIndex: `10000`

@@ -23,7 +23,7 @@ const HeaderLogo = () => {
         objectFit: 'contain',
         objectPosition: '50% 50%'
       }}
-      style={{ height: `30px` }}
+      style={{ height: `25px` }}
     />
   );
 };
