@@ -10,7 +10,6 @@ const Values = () => (
         style={{
           color: `white`,
           textAlign: `center`,
-          letterSpacing: `2px`,
           marginBottom: `1.5em`
         }}
       >
