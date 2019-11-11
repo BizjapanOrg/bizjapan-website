@@ -3,10 +3,12 @@ import React from 'react';
 
 import BlackLogo from './BlackLogo';
 import HeaderNavi from './HeaderNavi';
+import HeaderNaviMobile from './HeaderNaviMobile';
 
 const Header = () => (
   <header
     style={{
+      position: `fixed`,
       width: `100%`,
       height: `60px`,
       padding: `20px 5%`,
@@ -30,8 +32,10 @@ var naviList = ['home', 'project', 'report', 'profile', 'join'];
 const mobileOrDesktop = () => {
   var mq = window.matchMedia('(max-width: 720px)');
   if (mq.matches) {
-    return;
+    // Mobile
+    return <HeaderNaviMobile list={naviList} />;
   } else {
+    // Desktop
     return <HeaderNavi list={naviList} />;
   }
 };
