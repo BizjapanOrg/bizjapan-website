@@ -1,30 +1,31 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import styled from 'styled-components';
 
 const HeaderNavi = props => {
   const naviItems = props.list.map(item => {
     if (item === 'join') {
       return (
-        <li key={item} style={{ float: `left`, marginRight: `3em` }}>
+        <NaviItem key={item}>
           <a
             style={{ color: `black`, textDecoration: `none` }}
             href='https://sites.google.com/bizjapan.org/recruiting-jp/home'
           >
             JOIN
           </a>
-        </li>
+        </NaviItem>
+      );
+    } else if (item === 'home') {
+      return (
+        <NaviItem key={item}>
+          <ItemLink to={'/'}>{item.toUpperCase()}</ItemLink>
+        </NaviItem>
       );
     }
     return (
-      <li key={item} style={{ float: `left`, marginRight: `3em` }}>
-        <Link
-          to={'/' + item}
-          style={{ color: `black`, textDecoration: `none` }}
-          activeStyle={{ textDecoration: `underline` }}
-        >
-          {item.toUpperCase()}
-        </Link>
-      </li>
+      <NaviItem key={item}>
+        <ItemLink to={'/' + item}>{item.toUpperCase()}</ItemLink>
+      </NaviItem>
     );
   });
   return (
@@ -43,5 +44,18 @@ const HeaderNavi = props => {
     </ul>
   );
 };
+
+// Define styled components.
+const NaviItem = styled.li`
+  float: left;
+  margin-right: 3em;
+`;
+
+const ItemLink = styled(props => (
+  <Link activeStyle={{ textDecoration: `underline` }} {...props} />
+))`
+  color: black;
+  text-decoration: none;
+`;
 
 export default HeaderNavi;
