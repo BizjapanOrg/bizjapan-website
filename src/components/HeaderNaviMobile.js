@@ -31,7 +31,6 @@ const HeaderNaviMobile = props => {
   return (
     <div
       style={{
-        display: `none`,
         zIndex: `1000000`,
         position: `fixed`,
         top: `60px`,
@@ -51,7 +50,8 @@ const HeaderNaviMobile = props => {
           margin: `0`,
           fontWeight: `bold`,
           listStyle: `none`,
-          textDecoration: `none`
+          textDecoration: `none`,
+          textAlign: `right`
         }}
       >
         {naviItems}
@@ -65,7 +65,7 @@ const NaviItem = styled.li`
   /* The same as H1 tag. */
   margin: 0;
   padding: 0;
-  margin-bottom: 1.2em;
+  margin-bottom: 1.4em;
   color: black;
   opacity: initial;
   font-family: 'DIN alternate', 'Ropa Sans', sans-serif;
