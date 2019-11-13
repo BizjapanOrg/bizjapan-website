@@ -38,7 +38,13 @@ module.exports = {
         display: 'swap'
       }
     },
-    `gatsby-plugin-styled-components`
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        include: /images/
+      }
+    }
   ],
   pathPrefix: '/bizjapan-new-website'
 };

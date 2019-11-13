@@ -5,6 +5,8 @@ import BlackLogo from './BlackLogo';
 import HeaderNavi from './HeaderNavi';
 import HeaderNaviMobile from './HeaderNaviMobile';
 
+import Pulse from '../images/pulse.svg'
+
 class Header extends React.Component {
   constructor(props) {
     super(props);
@@ -25,7 +27,19 @@ class Header extends React.Component {
       // Mobile
       return (
         <>
-          <a onClick={this.handleClick}>Open</a>
+          <button 
+            onClick={this.handleClick} 
+            style={{ 
+              width:`50px`, 
+              height:`30px`, 
+              padding: `0`, 
+              margin:`-3.5px 0 0 0`, 
+              border:`0`, 
+              float: `right`
+            }}
+          >
+            <Pulse style={{height: `100%`, width:`100%`}} />
+          </button>
 
           {this.state.headerNavi ? <HeaderNaviMobile list={naviList} /> : ''}
         </>
