@@ -18,7 +18,7 @@ const Platform = () => (
       style={{
         height: `3em`,
         display: `block`,
-        margin: `2em auto`
+        margin: `0 auto 2em`
       }}
     />
     <div
