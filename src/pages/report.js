@@ -1,18 +1,38 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
 
 // import Layout from "../components/layout"
-import SEO from "../components/seo"
+import SEO from "../components/seo";
 
-const SecondPage = () => (
-  // <Layout>
-  <>
-    <SEO title="Report" />
-    <h1>Hi from the Report page</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
-  </>
-  // </Layout>
-)
+import AnnualReport from "../components/AnnualReport";
+import PastReports from "../components/PastReports";
 
-export default SecondPage
+const SecondPage = () => {
+  const ReportTop = useStaticQuery(graphql`
+    query {
+      placeholderImage: file(relativePath: { eq: "topimage/report.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `);
+
+  return (
+    // <Layout>
+    <>
+      <SEO title="Report" />
+      <div style={{ paddingTop: `60px` }}>
+        <Img fluid={ReportTop.placeholderImage.childImageSharp.fluid} />
+      </div>
+      <AnnualReport />
+      <PastReports />
+    </>
+    // </Layout>
+  );
+};
+
+export default SecondPage;
