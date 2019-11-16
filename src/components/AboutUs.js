@@ -1,12 +1,18 @@
-import React from 'react';
+import React from "react";
 
 // Import styled components
-import Container from './styled/Container';
-import Title from './styled/Title';
+import Container from "./styled/Container";
+import Pulse from "../images/pulse.svg";
 
 const AboutUs = () => (
-  <Container>
-    <Title>About Us</Title>
+  <Container title="About Us">
+    <Pulse
+      style={{
+        height: `3em`,
+        display: `block`,
+        margin: `2em auto`
+      }}
+    />
     <p>
       Bizjapan is a platform where a wide variety of people gather with a global
       perspective and entrepreneurship, and a wide variety of projects are
