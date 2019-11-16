@@ -1,31 +1,32 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import styled from 'styled-components';
+import React from "react";
+import { Link } from "gatsby";
+import styled from "styled-components";
 
 // A list of pages
 const FooterNavi = props => {
   const naviItems = props.list.map(item => {
-    if (item === 'join') {
+    if (item === "join") {
       return (
         <NaviItem key={item}>
           <a
             style={{ color: `black`, textDecoration: `none` }}
-            href='https://sites.google.com/bizjapan.org/recruiting-jp/home'
+            href="https://sites.google.com/bizjapan.org/recruiting-jp/home"
+            target="_blank"
           >
             - JOIN
           </a>
         </NaviItem>
       );
-    } else if (item === 'home') {
+    } else if (item === "home") {
       return (
         <NaviItem key={item}>
-          <ItemLink to={'/'}>{'- ' + item.toUpperCase()}</ItemLink>
+          <ItemLink to={"/"}>{"- " + item.toUpperCase()}</ItemLink>
         </NaviItem>
       );
     }
     return (
       <NaviItem key={item}>
-        <ItemLink to={'/' + item}>{'- ' + item.toUpperCase()}</ItemLink>
+        <ItemLink to={"/" + item}>{"- " + item.toUpperCase()}</ItemLink>
       </NaviItem>
     );
   });
