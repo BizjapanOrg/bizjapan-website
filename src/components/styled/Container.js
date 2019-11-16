@@ -10,6 +10,9 @@ const Container = styled.section`
   max-width: 900px;
   padding: 8em 0;
   margin: 0 auto;
+  @media only screen and (max-width: 720px) {
+    padding: 70px 0;
+  }
 `;
 
 export default ({ title, inputColor, children, pulse }) => (
