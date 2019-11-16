@@ -1,30 +1,32 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import styled from 'styled-components';
+import React from "react";
+import { Link } from "gatsby";
+import styled from "styled-components";
+
+import BlackLogo from "./BlackLogo";
 
 const HeaderNaviMobile = props => {
   const naviItems = props.list.map(item => {
-    if (item === 'join') {
+    if (item === "join") {
       return (
         <NaviItem key={item}>
           <a
             style={{ color: `black`, textDecoration: `none` }}
-            href='https://sites.google.com/bizjapan.org/recruiting-jp/home'
+            href="https://sites.google.com/bizjapan.org/recruiting-jp/home"
           >
             JOIN
           </a>
         </NaviItem>
       );
-    } else if (item === 'home') {
+    } else if (item === "home") {
       return (
         <NaviItem key={item}>
-          <ItemLink to={'/'}>{item.toUpperCase()}</ItemLink>
+          <ItemLink to={"/"}>{item.toUpperCase()}</ItemLink>
         </NaviItem>
       );
     }
     return (
       <NaviItem key={item}>
-        <ItemLink to={'/' + item}>{item.toUpperCase()}</ItemLink>
+        <ItemLink to={"/" + item}>{item.toUpperCase()}</ItemLink>
       </NaviItem>
     );
   });
@@ -56,6 +58,18 @@ const HeaderNaviMobile = props => {
       >
         {naviItems}
       </ul>
+      <div
+        style={{
+          position: `absolute`,
+          bottom: `70px`,
+          width: `calc(100% - 140px)`
+        }}
+      >
+        <h2 style={{ textAlign: `center`, marginBottom: `35px` }}>
+          Global x Entrepreneurship
+        </h2>
+        <BlackLogo />
+      </div>
     </div>
   );
 };
@@ -68,7 +82,7 @@ const NaviItem = styled.li`
   margin-bottom: 1.4em;
   color: black;
   opacity: initial;
-  font-family: 'DIN alternate', 'Ropa Sans', sans-serif;
+  font-family: "DIN alternate", "Ropa Sans", sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
