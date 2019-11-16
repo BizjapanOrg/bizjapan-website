@@ -1,10 +1,14 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const Title = styled.h1`
-  color: black;
+  color: ${props => props.inputColor || "black"};
   text-align: center;
   margin-bottom: 1.5em;
 `;
 
-export default ({ children }) => <Title className={`title`}>{children}</Title>;
+export default ({ inputColor, children }) => (
+  <Title inputColor={inputColor} className={`title`}>
+    {children}
+  </Title>
+);
