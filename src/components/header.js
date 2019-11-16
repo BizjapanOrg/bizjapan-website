@@ -1,5 +1,5 @@
-// import { Link } from "gatsby"
 import React from "react";
+import { Link } from "gatsby";
 
 import BlackLogo from "./BlackLogo";
 import HeaderNavi from "./HeaderNavi";
@@ -67,9 +67,9 @@ class Header extends React.Component {
         }}
       >
         {/* logo */}
-        <div style={{ float: `left`, width: `120px` }}>
+        <Link to="/" style={{ float: `left`, width: `120px` }}>
           <BlackLogo />
-        </div>
+        </Link>
         {this.mobileOrDesktop()}
       </header>
     );
