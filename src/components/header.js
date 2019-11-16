@@ -36,7 +36,8 @@ class Header extends React.Component {
                 padding: `0`,
                 margin: `-3.5px 0 0 0`,
                 border: `0`,
-                float: `right`
+                float: `right`,
+                backgroundColor: `white`
               }}
             >
               <Pulse style={{ height: `100%`, width: `100%` }} />
