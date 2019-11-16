@@ -1,8 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: `Bizjapan`,
-    description: `Something something something`,
-    author: `Hiroki Kameyama`
+    description: `Bizjapan is a non-profit organization run by university students, which aims to promote student’s entrepreneurship in Japan. We run a lot of innovative projects. Our projects include space medicine, supporting international students coming to Japan, African startups and so on.`,
+    author: `NPO Bizjapan`,
+    url: "https://bizjapan.org",
+    image: "/images/topimage/home.png", // Path to your image you placed in the 'static' folder
+    twitterUsername: "@BizjapanOrg"
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -34,17 +37,17 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: ['Ropa Sans', `Noto Sans JP`],
-        display: 'swap'
+        fonts: ["Ropa Sans", `Noto Sans JP`],
+        display: "swap"
       }
     },
     `gatsby-plugin-styled-components`,
     {
-      resolve: 'gatsby-plugin-react-svg',
+      resolve: "gatsby-plugin-react-svg",
       options: {
         include: /images/
       }
     }
   ],
-  pathPrefix: '/bizjapan-new-website'
+  pathPrefix: "/bizjapan-new-website"
 };
