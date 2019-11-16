@@ -3,7 +3,7 @@ import { StaticQuery, graphql } from "gatsby";
 
 // Import styled components
 import Container from "./styled/Container";
-import ProjectCardWithatsbyImage from "./styled/ProjectCardWithatsbyImage";
+import ProjectCard from "./styled/ProjectCardWithatsbyImage";
 import Pulse from "../images/pulse.svg";
 
 var projectsData = require("./projectsData");
@@ -36,7 +36,7 @@ const WhatIsProject = () => (
               });
 
               return (
-                <ProjectCardWithatsbyImage
+                <ProjectCard
                   img={image.node.childImageSharp.fixed}
                   key={image.node.name}
                   name={image.node.name}
