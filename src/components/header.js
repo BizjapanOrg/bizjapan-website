@@ -1,11 +1,11 @@
 // import { Link } from "gatsby"
-import React from 'react';
+import React from "react";
 
-import BlackLogo from './BlackLogo';
-import HeaderNavi from './HeaderNavi';
-import HeaderNaviMobile from './HeaderNaviMobile';
+import BlackLogo from "./BlackLogo";
+import HeaderNavi from "./HeaderNavi";
+import HeaderNaviMobile from "./HeaderNaviMobile";
 
-import Pulse from '../images/pulse.svg'
+import Pulse from "../images/pulse.svg";
 
 class Header extends React.Component {
   constructor(props) {
@@ -18,36 +18,39 @@ class Header extends React.Component {
     this.setState(prevState => ({
       headerNavi: !prevState.headerNavi
     }));
-    console.log('Clicked');
+    console.log("Clicked");
   }
 
   mobileOrDesktop() {
-    var mq = window.matchMedia('(max-width: 720px)');
-    if (mq.matches) {
-      // Mobile
-      return (
-        <>
-          <button 
-            onClick={this.handleClick} 
-            style={{ 
-              width:`50px`, 
-              height:`30px`, 
-              padding: `0`, 
-              margin:`-3.5px 0 0 0`, 
-              border:`0`, 
-              float: `right`
-            }}
-          >
-            <Pulse style={{height: `100%`, width:`100%`}} />
-          </button>
+    if (typeof window !== `undefined`) {
+      var mq = window.matchMedia("(max-width: 720px)");
+      if (mq.matches) {
+        // Mobile
+        return (
+          <>
+            <button
+              onClick={this.handleClick}
+              style={{
+                width: `50px`,
+                height: `30px`,
+                padding: `0`,
+                margin: `-3.5px 0 0 0`,
+                border: `0`,
+                float: `right`
+              }}
+            >
+              <Pulse style={{ height: `100%`, width: `100%` }} />
+            </button>
 
-          {this.state.headerNavi ? <HeaderNaviMobile list={naviList} /> : ''}
-        </>
-      );
-    } else {
-      // Desktop
-      return <HeaderNavi list={naviList} />;
+            {this.state.headerNavi ? <HeaderNaviMobile list={naviList} /> : ""}
+          </>
+        );
+      } else {
+        // Desktop
+        return <HeaderNavi list={naviList} />;
+      }
     }
+    return <HeaderNavi list={naviList} />;
   }
 
   render() {
@@ -72,6 +75,6 @@ class Header extends React.Component {
   }
 }
 
-var naviList = ['home', 'project', 'report', 'profile', 'join'];
+var naviList = ["home", "project", "report", "profile", "join"];
 
 export default Header;
