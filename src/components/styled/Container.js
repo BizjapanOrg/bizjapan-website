@@ -1,5 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
+import Title from "./Title";
 
 const Container = styled.section`
   position: static;
@@ -11,6 +12,9 @@ const Container = styled.section`
   margin: 0 auto;
 `;
 
-export default ({ children }) => (
-  <Container className={`container`}>{children}</Container>
+export default ({ title, inputColor, children, pulse }) => (
+  <Container className={`container`}>
+    <Title inputColor={inputColor}>{title}</Title>
+    {children}
+  </Container>
 );
