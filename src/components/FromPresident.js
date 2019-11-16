@@ -15,7 +15,7 @@ const FromPresident = () => (
         margin: `0 auto 2em`
       }}
     />
-    <img src={president} style={{ marginBottom: `2em` }} />
+    <img src={president} alt="President" style={{ marginBottom: `2em` }} />
     <p style={{ marginBottom: `2em` }}>
       It’s always fantastic when someone talks about their “passion.” I’ve felt
       this way numerous times looking at the sparkling eyes of Bizjapan members,

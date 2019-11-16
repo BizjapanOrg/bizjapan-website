@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 
 // Import styled components
 import Container from "./styled/Container";
@@ -23,6 +22,7 @@ const Stats = () => (
         <h2 style={{ textAlign: `center` }}>Member Shift</h2>
         <img
           src={graph1}
+          alt="Demographic"
           style={{
             width: `75%`,
             minWidth: `250px`,
@@ -41,6 +41,7 @@ const Stats = () => (
         <h2 style={{ textAlign: `center` }}>Nationality</h2>
         <img
           src={graph2}
+          alt="Nationality"
           style={{
             width: `75%`,
             minWidth: `250px`,
@@ -58,6 +59,7 @@ const Stats = () => (
         <h2 style={{ textAlign: `center` }}>University</h2>
         <img
           src={graph3}
+          alt="University"
           style={{
             width: `75%`,
             minWidth: `250px`,

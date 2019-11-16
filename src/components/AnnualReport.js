@@ -22,8 +22,9 @@ const AboutUs = () => (
       below.
     </p>
     <a
-      target="_blank"
       href="https://drive.google.com/file/d/1hQuBPJQtIK6RK50JSSroBUkVjE2cFIZB/view?usp=sharing"
+      target="_blank"
+      rel="noopener noreferrer"
     >
       <img
         src={report2018}

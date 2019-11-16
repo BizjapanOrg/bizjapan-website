@@ -13,6 +13,7 @@ const HeaderNaviMobile = props => {
             style={{ color: `black`, textDecoration: `none` }}
             href="https://sites.google.com/bizjapan.org/recruiting-jp/home"
             target="_blank"
+            rel="noopener noreferrer"
           >
             JOIN
           </a>

@@ -19,6 +19,7 @@ const TableContents = props => (
           margin: `auto`
         }}
         target="_blank"
+        rel="noopener noreferrer"
       >
         {props.body}
       </a>
