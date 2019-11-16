@@ -39,7 +39,7 @@ const WhatIsProject = () => (
                 <ProjectCard
                   img={image.node.childImageSharp.fixed}
                   key={image.node.name}
-                  name={image.node.name}
+                  name={project.name}
                   desc={project.desc}
                 />
               );
