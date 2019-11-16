@@ -1,18 +1,34 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
 
 // import Layout from "../components/layout"
-import SEO from "../components/seo"
+import SEO from "../components/seo";
+import FromPresident from "../components/FromPresident";
 
-const SecondPage = () => (
-  // <Layout>
-  <>
-    <SEO title="Profile" />
-    <h1>Hi from the profile page</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
-  </>
-  // </Layout>
-)
+const SecondPage = () => {
+  const ProfileTop = useStaticQuery(graphql`
+    query {
+      placeholderImage: file(relativePath: { eq: "topimage/profile.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `);
+  return (
+    // <Layout>
+    <>
+      <SEO title="Profile" />
+      <div style={{ paddingTop: `60px` }}>
+        <Img fluid={ProfileTop.placeholderImage.childImageSharp.fluid} />
+      </div>
+      <FromPresident />
+    </>
+    // </Layout>
+  );
+};
 
-export default SecondPage
+export default SecondPage;
