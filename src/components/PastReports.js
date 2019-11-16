@@ -9,8 +9,6 @@ import TableContents from "./styled/TableContents";
 import report2017 from "../images/report/2017.jpg";
 import report2016 from "../images/report/2016.jpg";
 import report2015 from "../images/report/2015.jpg";
-import report2013 from "../images/report/2013.jpg";
-import report2012 from "../images/report/2012.jpg";
 
 const PastReports = () => (
   <Container title="Past Reports">
@@ -30,11 +28,13 @@ const PastReports = () => (
           img={report2017}
           link="https://drive.google.com/file/d/1amhkSsVRgGh_mF0hQh4eAy2t5qLJj4I_/view"
           body="Annual Report 2017"
+          SameSite="None"
         />
         <TableContents
           img={report2016}
           link="https://drive.google.com/file/d/0B4Ox1EpBqvCXdUoxb3hPOGhxc28/view"
           body="Annual Report 2016"
+          SameSite="None"
         />
         <TableContents
           img={report2015}
