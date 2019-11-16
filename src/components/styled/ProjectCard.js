@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const ProjectCard = props => (
   <ProjectCardStyle>
@@ -17,11 +17,11 @@ const ProjectCard = props => (
 
 // Define style of ProjectCard
 const ProjectCardStyle = styled.div`
-  width: 230px;
-  min-width: 230px;
+  width: 25%;
+  min-width: 200px;
+  margin-bottom: 1.45em;
   border-radius: 20px;
   box-shadow: 6px 6px 30px 0 rgba(0, 0, 0, 0.16);
-  margin: 0 0.5em 1.45em 0.5em;
 `;
 const CardName = styled.p`
   margin: 0;
