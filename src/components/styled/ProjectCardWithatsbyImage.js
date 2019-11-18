@@ -11,6 +11,9 @@ const ProjectCard = props => (
           objectFit: "contain",
           objectPosition: "50% 50%"
         }}
+        style={{
+          borderRadius: "20px 20px 0 0"
+        }}
       />
     </div>
     <div style={{ margin: `1em` }}>
