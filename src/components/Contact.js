@@ -15,7 +15,7 @@ const Contact = () => (
         margin: `0 auto 2em`
       }}
     />
-    <p>Paragraph comes in!</p>
+    <p style={{ marginBottom: `2em` }}>Paragraph comes in!</p>
     <div style={{ textAlign: "center" }}>
       <Button>Send a message!</Button>
     </div>
