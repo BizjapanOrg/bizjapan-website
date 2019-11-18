@@ -7,9 +7,9 @@ import Container from "./styled/Container";
 import ProjectCard from "./styled/ProjectCard";
 
 // Import Images
-import jumpjapan from "../images/projects/jumpjapan.png";
-import mxspace from "../images/projects/mxspace.png";
-import nichy from "../images/projects/nichy.png";
+import jumpjapan from "../images/projects/2018/jumpjapan.jpg";
+import mxspace from "../images/projects/2018/mxspace.jpg";
+import nichy from "../images/projects/2018/nichy.jpg";
 import Pulse from "../images/pulse.svg";
 
 const Platform = () => (
