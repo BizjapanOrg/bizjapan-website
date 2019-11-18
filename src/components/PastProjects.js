@@ -39,7 +39,7 @@ const PastProjects = () => (
                 <ProjectCard
                   img={image.node.childImageSharp.fixed}
                   key={image.node.name}
-                  name={image.node.name}
+                  name={pastProject.name}
                   desc={pastProject.desc}
                 />
               );
