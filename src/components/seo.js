@@ -19,6 +19,7 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            url
             image
           }
         }
@@ -27,6 +28,7 @@ function SEO({ description, lang, meta, title }) {
   );
 
   const metaDescription = description || site.siteMetadata.description;
+  const metaImage = site.siteMetadata.url + "/" + site.siteMetadata.image;
 
   return (
     <Helmet
@@ -70,7 +72,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:image`,
-          content: site.siteMetadata.image
+          content: metaImage
         }
       ].concat(meta)}
     />
