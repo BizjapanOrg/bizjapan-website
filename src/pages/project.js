@@ -13,7 +13,7 @@ import PastProjects from "../components/PastProjects";
 const SecondPage = () => {
   const ProjectTop = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "topimage/project.png" }) {
+      placeholderImage: file(relativePath: { eq: "topimage/project.jpeg" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid

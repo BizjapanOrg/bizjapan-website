@@ -11,7 +11,7 @@ import PastReports from "../components/PastReports";
 const SecondPage = () => {
   const ReportTop = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "topimage/report.png" }) {
+      placeholderImage: file(relativePath: { eq: "topimage/report.jpeg" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid

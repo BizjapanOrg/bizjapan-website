@@ -11,7 +11,7 @@ import Stats from "../components/Stats";
 const SecondPage = () => {
   const ProfileTop = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "topimage/profile.png" }) {
+      placeholderImage: file(relativePath: { eq: "topimage/profile.jpeg" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
