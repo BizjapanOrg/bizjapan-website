@@ -1,3 +1,13 @@
 {
-  "example": "This is an example."
+  "example": "Bizbiz",
+  "values": {
+    "firstvalue": {
+      "tit": "Global",
+      "desc": "“Global” as Bizjapan puts it is NOT just an “interaction with international students.” It also means crossing over the numerous boundaries — boundaries of countries, fields, age, gender, universities, culture, and so on. Here we assemble, surpassing all those unnecessary boundaries. By getting over them, we co-create and make an impact on the world."
+    },
+    "secondvalue": {
+      "tit": "Entrepreneurship",
+      "desc": "“Entrepreneurship” as Bizjapan puts it is NOT “the act of setting up a business.” We consider it as a mentality where passion and novelty meets, and it rests in the mind of those who wish to make an impact on the world. Sympathy from others, social significance, sustainable model, recirculation of resources — everything starts from here."
+    }
+  }
 }
