@@ -1,6 +1,7 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
+import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl";
 
 // import components
 import SEO from "../components/seo";
@@ -10,7 +11,7 @@ import Platform from "../components/Platform";
 import Partners from "../components/Partners";
 import Contact from "../components/Contact";
 
-const IndexPage = () => {
+const IndexPage = ({ intl }) => {
   const HomeTop = useStaticQuery(graphql`
     query {
       placeholderImage: file(relativePath: { eq: "topimage/home.jpeg" }) {
@@ -29,7 +30,7 @@ const IndexPage = () => {
       <div style={{ paddingTop: `60px` }}>
         <Img fluid={HomeTop.placeholderImage.childImageSharp.fluid} />
       </div>
-      <AboutUs />
+      <AboutUs title={intl.formatMessage({ id: "example" })} />
       <Values />
       <Platform />
       <Partners />
@@ -38,4 +39,4 @@ const IndexPage = () => {
   );
 };
 
-export default IndexPage;
+export default injectIntl(IndexPage);

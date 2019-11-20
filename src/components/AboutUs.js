@@ -4,7 +4,7 @@ import React from "react";
 import Container from "./styled/Container";
 import Pulse from "../images/pulse.svg";
 
-const AboutUs = () => (
+const AboutUs = ({ title }) => (
   <Container title="About Us">
     <Pulse
       style={{
@@ -14,7 +14,8 @@ const AboutUs = () => (
       }}
     />
     <p>
-      Bizjapan is a platform where a wide variety of people gather with a global
+      {title}
+      {/* Bizjapan is a platform where a wide variety of people gather with a global
       perspective and entrepreneurship, and a wide variety of projects are
       running. Bizjapan was founded in 2011 and became an NPO in 2017. We have
       successfully completed 55 projects so far.
@@ -29,7 +30,7 @@ const AboutUs = () => (
       <br />
       Bizjapan is an NPO where students beyond the difference of gender,
       nationality, university, and interest come together. Here, you can pursue
-      a project of your own, with the belief in yourself and your critical eye.
+      a project of your own, with the belief in yourself and your critical eye. */}
     </p>
   </Container>
 );
