@@ -1,4 +1,5 @@
 import React from "react";
+import { FormattedMessage } from "gatsby-plugin-intl";
 
 // Import styled components
 import Container from "./styled/Container";
@@ -15,21 +16,15 @@ const WhatIsProject = () => (
     />
     <div>
       <p>
-        In Bizjapan, members engage with their interests in the form of
-        “projects.”
+        <FormattedMessage id="whatisproject.first" />
         <br />
         <br />
-        “Projects” are done in various ways. Sometimes it can be hosting a
-        workshop aimed towards people outside the community or an event
-        co-hosted with companies. On the other hand it can be a study tour
-        involving many associations or providing workshops exclusively for our
-        members.
+
+        <FormattedMessage id="whatisproject.second" />
         <br />
         <br />
-        The driving force of initiating projects is not a simple “what to do”
-        but rather an intensive process of thinking “what kind of society is
-        ideal for us to live in”. Each project focuses on creating and carrying
-        out their plans to realize it.
+
+        <FormattedMessage id="whatisproject.third" />
       </p>
     </div>
   </Container>

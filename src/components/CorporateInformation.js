@@ -1,34 +1,56 @@
 import React from "react";
 import styled from "styled-components";
+import { useIntl } from "gatsby-plugin-intl";
 
 // Import styled components
 import Container from "./styled/Container";
 
 import Pulse from "../images/pulse.svg";
 
-const CorporateInformation = () => (
-  <Container title="Corporate Information">
-    <Pulse
-      style={{
-        height: `3em`,
-        display: `block`,
-        margin: `0 auto 2em`
-      }}
-    />
-    {/* Table */}
-    <table style={{ width: `80%`, margin: `0 auto`, borderSpacing: `0` }}>
-      <tbody style={{ display: `table-row-group`, verticalAlign: `middle` }}>
-        <InfoTable title="Official Name	" body="NPO Bizjapan" />
-        <InfoTable title="Founder" body="Sho Hayashi" />
-        <InfoTable title="Establishment	" body="November, 24th, 2016" />
-        <InfoTable
-          title="Office"
-          body="303, Hongo-BAMBI-building, 5-26-16, Hongo, Bunkyo-ku, Tokyo"
-        />
-      </tbody>
-    </table>
-  </Container>
-);
+const CorporateInformation = () => {
+  const intl = useIntl();
+
+  return (
+    <Container title="Corporate Information">
+      <Pulse
+        style={{
+          height: `3em`,
+          display: `block`,
+          margin: `0 auto 2em`
+        }}
+      />
+      {/* Table */}
+      <table style={{ width: `80%`, margin: `0 auto`, borderSpacing: `0` }}>
+        <tbody style={{ display: `table-row-group`, verticalAlign: `middle` }}>
+          <InfoTable
+            title={intl.formatMessage({ id: "corporateinfo.name.title" })}
+            body={intl.formatMessage({ id: "corporateinfo.name.desc" })}
+          />
+          <InfoTable
+            title={intl.formatMessage({ id: "corporateinfo.founder.title" })}
+            body={intl.formatMessage({ id: "corporateinfo.founder.desc" })}
+          />
+          <InfoTable
+            title={intl.formatMessage({
+              id: "corporateinfo.establishment.title"
+            })}
+            body={intl.formatMessage({
+              id: "corporateinfo.establishment.desc"
+            })}
+          />
+          <InfoTable
+            title={intl.formatMessage({
+              id: "corporateinfo.office.title"
+            })}
+            body={intl.formatMessage({
+              id: "corporateinfo.office.desc"
+            })}
+          />
+        </tbody>
+      </table>
+    </Container>
+  );
+};
 
 const InfoTable = props => (
   <TableRow>

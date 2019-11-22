@@ -1,4 +1,5 @@
 import React from "react";
+import { FormattedMessage } from "gatsby-plugin-intl";
 
 // Import styled components
 import Container from "./styled/Container";
@@ -19,7 +20,9 @@ const Stats = () => (
     />
     <div style={{ width: `80%`, minWidth: `260px`, margin: `0 auto` }}>
       <div style={{ marginBottom: `50px` }}>
-        <h2 style={{ textAlign: `center` }}>Member Shift</h2>
+        <h2 style={{ textAlign: `center` }}>
+          <FormattedMessage id="stats.member.title" />
+        </h2>
         <img
           src={graph1}
           alt="Demographic"
@@ -31,14 +34,13 @@ const Stats = () => (
           }}
         />
         <p>
-          Since its establishment in 2011 by 4 original members, Bizjapan has
-          developed in these 7 years to as many as 216 members. We hold
-          recruitments in Spring and Autumn, where students active in various
-          fields join us.
+          <FormattedMessage id="stats.member.desc" />
         </p>
       </div>
       <div style={{ marginBottom: `50px` }}>
-        <h2 style={{ textAlign: `center` }}>Nationality</h2>
+        <h2 style={{ textAlign: `center` }}>
+          <FormattedMessage id="stats.nationality.title" />
+        </h2>
         <img
           src={graph2}
           alt="Nationality"
@@ -50,13 +52,13 @@ const Stats = () => (
           }}
         />
         <p>
-          The ratio of international members to Japanese members is 1:4. Large
-          number of the members are multilingual and our weekly gatherings are
-          held in English.
+          <FormattedMessage id="stats.nationality.desc" />
         </p>
       </div>
       <div>
-        <h2 style={{ textAlign: `center` }}>University</h2>
+        <h2 style={{ textAlign: `center` }}>
+          <FormattedMessage id="stats.university.title" />
+        </h2>
         <img
           src={graph3}
           alt="University"
@@ -68,9 +70,7 @@ const Stats = () => (
           }}
         />
         <p>
-          Students from various universities gather at Bizjapan, such as the
-          University of Tokyo, Keio University, Waseda University, etc. Some
-          even come from universities in Kansai area.
+          <FormattedMessage id="stats.university.desc" />
         </p>
       </div>
     </div>

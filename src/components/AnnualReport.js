@@ -1,4 +1,5 @@
 import React from "react";
+import { FormattedMessage } from "gatsby-plugin-intl";
 
 // Import styled components
 import Container from "./styled/Container";
@@ -16,10 +17,7 @@ const AboutUs = () => (
       }}
     />
     <p style={{ marginBottom: `2em` }}>
-      Bizjapan publishes an annual report to introduce members’ activities and
-      event participations, through Project Reports and Partner Introductions.
-      Please have a look to have a grasp of our experiences from the image
-      below.
+      <FormattedMessage id="annualreport" />
     </p>
     <a
       href="https://drive.google.com/file/d/1hQuBPJQtIK6RK50JSSroBUkVjE2cFIZB/view?usp=sharing"

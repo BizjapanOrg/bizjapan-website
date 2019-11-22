@@ -1,4 +1,5 @@
 import React from "react";
+import { FormattedMessage } from "gatsby-plugin-intl";
 
 // Import styled components
 import Container from "./styled/Container";
@@ -20,7 +21,7 @@ const PastReports = () => (
       }}
     />
     <p style={{ textAlign: `center`, marginBottom: `2em` }}>
-      You can download past annual reports from here.
+      <FormattedMessage id="pastreports" />
     </p>
     <table style={{ width: `100%`, borderSpacing: `0` }}>
       <tbody style={{ display: `table-row-group`, verticalAlign: `middle` }}>

@@ -1,7 +1,7 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
-import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl";
+import { injectIntl } from "gatsby-plugin-intl";
 
 // import components
 import SEO from "../components/seo";
@@ -30,7 +30,7 @@ const IndexPage = ({ intl }) => {
       <div style={{ paddingTop: `60px` }}>
         <Img fluid={HomeTop.placeholderImage.childImageSharp.fluid} />
       </div>
-      <AboutUs title={intl.formatMessage({ id: "example" })} />
+      <AboutUs />
       <Values />
       <Platform />
       <Partners />
