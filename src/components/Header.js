@@ -18,7 +18,6 @@ class Header extends React.Component {
     this.setState(prevState => ({
       headerNavi: !prevState.headerNavi
     }));
-    console.log("Clicked");
   }
 
   mobileOrDesktop() {
