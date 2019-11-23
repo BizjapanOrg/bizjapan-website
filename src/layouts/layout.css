@@ -1,5 +1,7 @@
 html {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Helvetica", "Noto Sans JP", "游ゴシック", "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ Ｐゴシック", "MS PGothic",
+    "Arial", "sans-serif";
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -175,7 +177,7 @@ textarea {
   font: inherit;
 }
 html {
-  font: 100%/1.45em "Noto Sans JP", sans-serif;
+  font: 100%/1.45em;
   box-sizing: border-box;
   overflow-y: scroll;
 }
@@ -190,7 +192,6 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: "Noto Sans JP", sans-serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;

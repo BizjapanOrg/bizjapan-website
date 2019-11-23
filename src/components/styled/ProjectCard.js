@@ -16,7 +16,7 @@ const ProjectCard = props => (
         }}
       />
     </div>
-    <div style={{ margin: `1em` }}>
+    <div style={{ margin: `0.5em 1em 1em 1em` }}>
       <CardName> {props.name} </CardName>
       <CardDesc> {props.desc} </CardDesc>
     </div>
@@ -39,7 +39,7 @@ const CardName = styled.p`
 const CardDesc = styled.p`
   margin: 0;
   padding-top: 0.5em;
-  font-size: 0.8em;
+  font-size: 0.85em;
 `;
 
 export default ProjectCard;
