@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "gatsby-plugin-intl";
 
-import BlackLogo from "./BlackLogo";
+import BlackLogo from "../BlackLogo";
 import HeaderNavi from "./HeaderNavi";
 import HeaderNaviMobile from "./HeaderNaviMobile";
 
-import Pulse from "../images/pulse.svg";
+import Pulse from "../../images/pulse.svg";
 
 class Header extends React.Component {
   constructor(props) {

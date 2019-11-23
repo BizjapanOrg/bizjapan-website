@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby-plugin-intl";
 import styled from "styled-components";
 
-import BlackLogo from "./BlackLogo";
+import BlackLogo from "../BlackLogo";
 
 const HeaderNaviMobile = props => {
   const naviItems = props.list.map(item => {
