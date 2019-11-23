@@ -3,7 +3,7 @@ module.exports = {
     title: `Bizjapan`,
     description: `Bizjapan is a non-profit organization run by university students, which aims to promote student’s entrepreneurship in Japan. We run a lot of innovative projects. Our projects include space medicine, supporting international students coming to Japan, African startups and so on.`,
     author: `NPO Bizjapan`,
-    url: "https://hirkame.github.io/bizjapan-new-website",
+    url: "https://bizjapan.org",
     image: "home.jpg", // Path to your image you placed in the 'static' folder
     twitterUsername: "@BizjapanOrg"
   },
