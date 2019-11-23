@@ -12,9 +12,9 @@ const WhatIsProject = () => {
 
   // Loaded project data depending on the locale.
   if (intl.locale === "en") {
-    var projectsData = require("./projectsData");
+    var projectsData = require("../intl/projectsData");
   } else {
-    projectsData = require("./projectsDataJp");
+    projectsData = require("../intl/projectsDataJp");
   }
 
   return (

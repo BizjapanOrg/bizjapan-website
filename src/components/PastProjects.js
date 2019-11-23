@@ -11,9 +11,9 @@ const PastProjects = () => {
   const intl = useIntl();
   // Loaded project data depending on the locale.
   if (intl.locale === "en") {
-    var pastProjectsData = require("./pastProjectData");
+    var pastProjectsData = require("../intl/pastProjectData");
   } else {
-    pastProjectsData = require("./pastProjectDataJp.js");
+    pastProjectsData = require("../intl/pastProjectDataJp.js");
   }
 
   return (
