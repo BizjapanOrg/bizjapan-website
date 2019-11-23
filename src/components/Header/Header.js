@@ -43,7 +43,7 @@ class Header extends React.Component {
               <Pulse style={{ height: `100%`, width: `100%` }} />
             </button>
 
-            {this.state.headerNavi ? <HeaderNaviMobile list={naviList} /> : ""}
+            {this.state.headerNavi ? <HeaderNaviMobile /> : ""}
           </>
         );
       } else {
@@ -51,7 +51,7 @@ class Header extends React.Component {
         return <HeaderNavi />;
       }
     }
-    return <HeaderNavi list={naviList} />;
+    return <HeaderNavi />;
   }
 
   render() {
@@ -75,7 +75,5 @@ class Header extends React.Component {
     );
   }
 }
-
-var naviList = ["home", "project", "report", "profile", "join"];
 
 export default Header;
