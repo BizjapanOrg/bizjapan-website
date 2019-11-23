@@ -34,13 +34,6 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
     `gatsby-plugin-layout`,
-    {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: ["Ropa Sans", `Noto Sans JP`],
-        display: "swap"
-      }
-    },
     `gatsby-plugin-styled-components`,
     {
       resolve: "gatsby-plugin-react-svg",
