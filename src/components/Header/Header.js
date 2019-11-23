@@ -15,9 +15,9 @@ class Header extends React.Component {
   }
 
   handleClick() {
-    this.setState(prevState => ({
-      headerNavi: !prevState.headerNavi
-    }));
+    this.setState({
+      headerNavi: !this.state.headerNavi
+    });
   }
 
   mobileOrDesktop() {
@@ -43,7 +43,11 @@ class Header extends React.Component {
               <Pulse style={{ height: `100%`, width: `100%` }} />
             </button>
 
-            {this.state.headerNavi ? <HeaderNaviMobile /> : ""}
+            {this.state.headerNavi ? (
+              <HeaderNaviMobile handleClick={this.handleClick} />
+            ) : (
+              ""
+            )}
           </>
         );
       } else {
