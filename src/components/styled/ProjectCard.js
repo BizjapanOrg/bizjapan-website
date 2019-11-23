@@ -1,13 +1,21 @@
 import React from "react";
 import styled from "styled-components";
+import Img from "gatsby-image";
 
 const ProjectCard = props => (
   <ProjectCardStyle>
-    <img
-      src={props.img}
-      alt={props.name}
-      style={{ borderRadius: `20px 20px 0 0`, width: `100%` }}
-    />
+    <div style={{ borderRadius: `20px 20px 0 0` }}>
+      <Img
+        fixed={props.img}
+        imgStyle={{
+          objectFit: "contain",
+          objectPosition: "50% 50%"
+        }}
+        style={{
+          borderRadius: "20px 20px 0 0"
+        }}
+      />
+    </div>
     <div style={{ margin: `1em` }}>
       <CardName> {props.name} </CardName>
       <CardDesc> {props.desc} </CardDesc>
@@ -17,9 +25,8 @@ const ProjectCard = props => (
 
 // Define style of ProjectCard
 const ProjectCardStyle = styled.div`
-  width: 25%;
-  min-width: 200px;
-  margin-bottom: 1.45em;
+  width: 230px;
+  margin: 0 0.5em 1.45em 0.5em;
   border-radius: 20px;
   box-shadow: 6px 6px 30px 0 rgba(0, 0, 0, 0.16);
 `;
