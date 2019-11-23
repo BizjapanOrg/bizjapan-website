@@ -102,7 +102,7 @@ const NaviItem = styled.li`
   font-family: "DIN alternate", "Ropa Sans", sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 2.25rem;
+  font-size: 2rem;
   line-height: 1.1;
 `;
 

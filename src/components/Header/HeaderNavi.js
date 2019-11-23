@@ -19,7 +19,7 @@ const HeaderNavi = () => {
       style={{
         listStyle: `none`,
         textAlign: `center`,
-        margin: `0`,
+        margin: `3px 0 0 0`,
         float: `right`,
         fontWeight: `bold`,
         textDecoration: `none`
@@ -64,8 +64,9 @@ const HeaderNavi = () => {
 // Define styled components.
 const NaviItem = styled.li`
   float: left;
-  margin-right: 3em;
+  margin-left: 2.5em;
   font-family: "DIN alternate", "Ropa Sans", sans-serif;
+  line-height: 19px;
 `;
 
 const ItemLink = styled(props => (
