@@ -68,8 +68,10 @@ module.exports = {
         exclude: [
           `/dev-404-page/`,
           `/404`,
-          `ja/404`,
-          `en/404`,
+          `/ja/404`,
+          `/en/404`,
+          `/en/404.html`,
+          `/ja/404.html`,
           `/offline-plugin-app-shell-fallback/`
         ]
       }
