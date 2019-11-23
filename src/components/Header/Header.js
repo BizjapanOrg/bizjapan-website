@@ -48,7 +48,7 @@ class Header extends React.Component {
         );
       } else {
         // Desktop
-        return <HeaderNavi list={naviList} />;
+        return <HeaderNavi />;
       }
     }
     return <HeaderNavi list={naviList} />;

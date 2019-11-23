@@ -4,78 +4,70 @@ import styled from "styled-components";
 
 import BlackLogo from "../BlackLogo";
 
-const HeaderNaviMobile = props => {
-  const naviItems = props.list.map(item => {
-    if (item === "join") {
-      return (
-        <NaviItem key={item}>
-          <a
-            style={{ color: `black`, textDecoration: `none` }}
-            href="https://sites.google.com/bizjapan.org/recruiting-jp/home"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Check our recruiting portal page."
-          >
-            JOIN
-          </a>
-        </NaviItem>
-      );
-    } else if (item === "home") {
-      return (
-        <NaviItem key={item}>
-          <ItemLink to={"/"}>{item.toUpperCase()}</ItemLink>
-        </NaviItem>
-      );
-    }
-    return (
-      <NaviItem key={item}>
-        <ItemLink to={"/" + item}>{item.toUpperCase()}</ItemLink>
-      </NaviItem>
-    );
-  });
-  return (
-    <div
+const HeaderNaviMobile = () => (
+  <div
+    style={{
+      zIndex: `1000000`,
+      position: `fixed`,
+      top: `60px`,
+      left: `0`,
+      width: `100vw`,
+      height: `calc(100vh - 60px)`,
+      padding: `70px`,
+      margin: `0`,
+      backgroundColor: `white`,
+      opacity: `90%`
+    }}
+  >
+    <ul
       style={{
-        zIndex: `1000000`,
-        position: `fixed`,
-        top: `60px`,
-        left: `0`,
-        width: `100vw`,
-        height: `calc(100vh - 60px)`,
-        padding: `70px`,
+        display: `flex`,
+        flexDirection: `column`,
         margin: `0`,
-        backgroundColor: `white`,
-        opacity: `90%`
+        fontWeight: `bold`,
+        listStyle: `none`,
+        textDecoration: `none`,
+        textAlign: `right`
       }}
     >
-      <ul
-        style={{
-          display: `flex`,
-          flexDirection: `column`,
-          margin: `0`,
-          fontWeight: `bold`,
-          listStyle: `none`,
-          textDecoration: `none`,
-          textAlign: `right`
-        }}
-      >
-        {naviItems}
-      </ul>
-      <div
-        style={{
-          position: `absolute`,
-          bottom: `70px`,
-          width: `calc(100% - 140px)`
-        }}
-      >
-        <h2 style={{ textAlign: `center`, marginBottom: `35px` }}>
-          Global x Entrepreneurship
-        </h2>
-        <BlackLogo />
-      </div>
+      <NaviItem key="home">
+        <ItemLink to={"/"}>HOME</ItemLink>
+      </NaviItem>
+      <NaviItem key="project">
+        <ItemLink to="/">PROJECT</ItemLink>
+      </NaviItem>
+      <NaviItem key="report">
+        <ItemLink to="/">REPORT</ItemLink>
+      </NaviItem>
+      <NaviItem key="profile">
+        <ItemLink to="/">PRFILE</ItemLink>
+      </NaviItem>
+      <NaviItem key="join">
+        <a
+          style={{ color: `black`, textDecoration: `none` }}
+          href="https://sites.google.com/bizjapan.org/recruiting-jp/home"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Check our recruiting portal page."
+        >
+          JOIN
+        </a>
+      </NaviItem>
+    </ul>
+    <div
+      style={{
+        position: `absolute`,
+        bottom: `70px`,
+        width: `calc(100% - 140px)`
+      }}
+    >
+      <h2 style={{ textAlign: `center`, marginBottom: `35px` }}>
+        Global x Entrepreneurship
+      </h2>
+      <BlackLogo />
     </div>
-  );
-};
+  </div>
+);
 
 // Define styled components.
 const NaviItem = styled.li`
