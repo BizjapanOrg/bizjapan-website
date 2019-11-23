@@ -1,6 +1,6 @@
-import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import React from "react";
+import { StaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
 
 // A list of Social Media
 const FooterSocialMedia = () => (
@@ -23,15 +23,18 @@ const FooterSocialMedia = () => (
         >
           {data.images.edges.map(image => {
             switch (image.node.name) {
-              case 'note':
+              case "note":
                 return (
                   <li key={image.node.name} style={{ margin: `0` }}>
-                    <a href='https://note.mu/bizjapan'>
+                    <a
+                      href="https://note.mu/bizjapan"
+                      aria-label="Check our Note.mu page."
+                    >
                       <Img
                         fixed={image.node.childImageSharp.fixed}
                         imgStyle={{
-                          objectFit: 'contain',
-                          objectPosition: '50% 50%'
+                          objectFit: "contain",
+                          objectPosition: "50% 50%"
                         }}
                         style={{
                           width: `2.5em`,
@@ -42,15 +45,18 @@ const FooterSocialMedia = () => (
                     </a>
                   </li>
                 );
-              case 'facebook':
+              case "facebook":
                 return (
                   <li key={image.node.name} style={{ margin: `0` }}>
-                    <a href='https://www.facebook.com/Bizjapan.org/'>
+                    <a
+                      href="https://www.facebook.com/Bizjapan.org/"
+                      aria-label="Check our facebook page."
+                    >
                       <Img
                         fixed={image.node.childImageSharp.fixed}
                         imgStyle={{
-                          objectFit: 'contain',
-                          objectPosition: '50% 50%'
+                          objectFit: "contain",
+                          objectPosition: "50% 50%"
                         }}
                         style={{
                           width: `2.5em`,
@@ -61,15 +67,18 @@ const FooterSocialMedia = () => (
                     </a>
                   </li>
                 );
-              case 'twitter':
+              case "twitter":
                 return (
                   <li key={image.node.name} style={{ margin: `0` }}>
-                    <a href='https://twitter.com/BizjapanOrg'>
+                    <a
+                      href="https://twitter.com/BizjapanOrg"
+                      aria-label="Check our twitter page."
+                    >
                       <Img
                         fixed={image.node.childImageSharp.fixed}
                         imgStyle={{
-                          objectFit: 'contain',
-                          objectPosition: '50% 50%'
+                          objectFit: "contain",
+                          objectPosition: "50% 50%"
                         }}
                         style={{
                           width: `2.5em`,
@@ -81,7 +90,7 @@ const FooterSocialMedia = () => (
                   </li>
                 );
               default:
-                return console.log('error');
+                return console.log("error");
             }
           })}
         </ul>

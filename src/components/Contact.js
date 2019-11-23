@@ -21,7 +21,7 @@ const Contact = () => {
         <FormattedMessage id="contact" />
       </p>
       <div style={{ textAlign: "center" }}>
-        <Button>Send a message!</Button>
+        <Button aria-label="Access to the contact form">Send a message!</Button>
       </div>
     </Container>
   );

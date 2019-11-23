@@ -14,6 +14,7 @@ const HeaderNaviMobile = props => {
             href="https://sites.google.com/bizjapan.org/recruiting-jp/home"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Check our recruiting portal page."
           >
             JOIN
           </a>

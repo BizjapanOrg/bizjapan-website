@@ -11,7 +11,7 @@
 <stop offset="0.86" stop-color="#D80110"/>
 <stop offset="1" stop-color="#E00008"/>
 </linearGradient>
-<clipPath >
+<clipPath>
 <rect width="200" height="155.796" fill="white"/>
 </clipPath>
 </defs>

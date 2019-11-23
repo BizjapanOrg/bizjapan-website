@@ -13,6 +13,7 @@ const FooterNavi = props => {
             href="https://sites.google.com/bizjapan.org/recruiting-jp/home"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="See the recruiting portal page of Bizjapan."
           >
             - JOIN
           </a>

@@ -23,6 +23,7 @@ const AboutUs = () => (
       href="https://drive.google.com/file/d/1hQuBPJQtIK6RK50JSSroBUkVjE2cFIZB/view?usp=sharing"
       target="_blank"
       rel="noopener noreferrer"
+      aria-label="See the annuanl report in 2018."
     >
       <img
         src={report2018}

@@ -38,6 +38,7 @@ class Header extends React.Component {
                 float: `right`,
                 backgroundColor: `white`
               }}
+              aria-label="Show Header Navi"
             >
               <Pulse style={{ height: `100%`, width: `100%` }} />
             </button>
