@@ -4,7 +4,7 @@ import { useIntl } from "gatsby-plugin-intl";
 
 // Import styled components
 import Container from "./styled/Container";
-import ProjectCard from "./styled/ProjectCardWithatsbyImage";
+import ProjectCard from "./styled/ProjectCard";
 import Pulse from "../images/pulse.svg";
 
 const PastProjects = () => {
