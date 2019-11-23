@@ -59,6 +59,17 @@ module.exports = {
         respectDNT: true,
         pageTransitionDelay: 0
       }
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        output: `/sitemap.xml`,
+        exclude: [
+          `/dev-404-page/`,
+          `/404`,
+          `/offline-plugin-app-shell-fallback/`
+        ]
+      }
     }
   ],
   pathPrefix: "/bizjapan-new-website"
