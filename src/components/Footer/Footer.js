@@ -16,7 +16,14 @@ const Footer = () => {
     >
       <Container>
         <div style={{ maxWidth: `600px`, margin: `0 auto` }}>
-          <p style={{ textAlign: `center`, marginBottom: `2em` }}>
+          <p
+            style={{
+              textAlign: `center`,
+              marginBottom: `2em`,
+              color: `rgba(0, 0, 0, 0.65)`,
+              fontFamily: `"DIN alternate", "Ropa Sans", sans-serif`
+            }}
+          >
             ©2019 NPO Bizjapan
           </p>
           <FooterNavi />

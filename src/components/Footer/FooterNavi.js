@@ -26,7 +26,7 @@ const FooterNavi = () => (
     </NaviItem>
     <NaviItem key="join">
       <a
-        style={{ color: `black`, textDecoration: `none` }}
+        style={{ color: `rgba(0, 0, 0, 0.65)`, textDecoration: `none` }}
         href="https://sites.google.com/bizjapan.org/recruiting-jp/home"
         target="_blank"
         rel="noopener noreferrer"
@@ -37,7 +37,7 @@ const FooterNavi = () => (
     </NaviItem>
     <NaviItem key="contact">
       <a
-        style={{ color: `black`, textDecoration: `none` }}
+        style={{ color: `rgba(0, 0, 0, 0.65)`, textDecoration: `none` }}
         href="https://docs.google.com/forms/d/e/1FAIpQLScXUlgjMW1PbzsaeOjXm9OfhKS480FOb7b4SRBTvQzlYPIOjQ/viewform?usp=sf_link"
         target="_blank"
         rel="noopener noreferrer"
@@ -52,13 +52,14 @@ const FooterNavi = () => (
 // Define styled components.
 const NaviItem = styled.li`
   width: 33%;
+  font-family: "DIN alternate", "Ropa Sans", sans-serif;
   display: inline-block;
   margin-bottom: 1em;
 `;
 
 const ItemLink = styled(props => <Link {...props} />)`
-  color: black;
   text-decoration: none;
+  color: rgba(0, 0, 0, 0.65);
 `;
 
 export default FooterNavi;
