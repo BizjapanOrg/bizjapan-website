@@ -19,7 +19,7 @@ const Footer = () => {
           <p style={{ textAlign: `center`, marginBottom: `2em` }}>
             ©2019 NPO Bizjapan
           </p>
-          <FooterNavi list={naviList} />
+          <FooterNavi />
           <FooterSocialMedia />
           <div style={{ width: `10em`, margin: `0 auto` }}>
             <BlackLogo />
@@ -29,7 +29,5 @@ const Footer = () => {
     </footer>
   );
 };
-
-var naviList = ["home", "project", "report", "profile", "join", "contact"];
 
 export default Footer;
