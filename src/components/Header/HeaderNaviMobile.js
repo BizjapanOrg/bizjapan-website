@@ -34,13 +34,13 @@ const HeaderNaviMobile = () => (
         <ItemLink to={"/"}>HOME</ItemLink>
       </NaviItem>
       <NaviItem key="project">
-        <ItemLink to="/">PROJECT</ItemLink>
+        <ItemLink to="/project">PROJECT</ItemLink>
       </NaviItem>
       <NaviItem key="report">
-        <ItemLink to="/">REPORT</ItemLink>
+        <ItemLink to="/report">REPORT</ItemLink>
       </NaviItem>
       <NaviItem key="profile">
-        <ItemLink to="/">PRFILE</ItemLink>
+        <ItemLink to="/profile">PROFILE</ItemLink>
       </NaviItem>
       <NaviItem key="join">
         <a
