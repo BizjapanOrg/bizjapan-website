@@ -16,7 +16,7 @@ const HeaderNaviMobile = () => (
       padding: `70px`,
       margin: `0`,
       backgroundColor: `white`,
-      opacity: `90%`
+      opacity: `95%`
     }}
   >
     <ul
