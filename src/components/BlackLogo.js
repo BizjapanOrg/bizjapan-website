@@ -1,6 +1,6 @@
-import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
 
 const HeaderLogo = () => {
   const data = useStaticQuery(graphql`
@@ -18,10 +18,10 @@ const HeaderLogo = () => {
   return (
     <Img
       fluid={data.placeholderImage.childImageSharp.fluid}
-      alt='Logo Black'
+      alt="Logo Black"
       imgStyle={{
-        objectFit: 'contain',
-        objectPosition: '50% 50%'
+        objectFit: "contain",
+        objectPosition: "50% 50%"
       }}
       style={{ height: `25px` }}
     />
