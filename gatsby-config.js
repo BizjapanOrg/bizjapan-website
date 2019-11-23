@@ -4,6 +4,7 @@ module.exports = {
     description: `Bizjapan is a non-profit organization run by university students, which aims to promote student’s entrepreneurship in Japan. We run a lot of innovative projects. Our projects include space medicine, supporting international students coming to Japan, African startups and so on.`,
     author: `NPO Bizjapan`,
     url: "https://bizjapan.org",
+    siteUrl: `https://bizjapan.org`,
     image: "home.jpg", // Path to your image you placed in the 'static' folder
     twitterUsername: "@BizjapanOrg"
   },
