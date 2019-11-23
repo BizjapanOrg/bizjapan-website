@@ -56,6 +56,16 @@ module.exports = {
         defaultLanguage: `en`,
         redirect: true
       }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-124275761-1",
+        head: false,
+        anonymize: true,
+        respectDNT: true,
+        pageTransitionDelay: 0
+      }
     }
   ],
   pathPrefix: "/bizjapan-new-website"
