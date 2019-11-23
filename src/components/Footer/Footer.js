@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
 // Import components.
-import FooterNavi from './FooterNavi';
-import FooterSocialMedia from './FooterSocialMedia';
-import BlackLogo from './BlackLogo';
+import FooterNavi from "./FooterNavi";
+import FooterSocialMedia from "./FooterSocialMedia";
+import BlackLogo from "../BlackLogo";
 
-import Container from './styled/Container';
+import Container from "../styled/Container";
 
 const Footer = () => {
   return (
@@ -30,6 +30,6 @@ const Footer = () => {
   );
 };
 
-var naviList = ['home', 'project', 'report', 'profile', 'join', 'contact'];
+var naviList = ["home", "project", "report", "profile", "join", "contact"];
 
 export default Footer;
