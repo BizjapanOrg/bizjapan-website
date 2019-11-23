@@ -32,6 +32,7 @@ const ProjectCardStyle = styled.div`
 `;
 const CardName = styled.p`
   margin: 0;
+  font-family: "DIN alternate", "Ropa Sans", sans-serif;
   font-size: 1.1em;
   font-weight: bold;
   text-align: center;
