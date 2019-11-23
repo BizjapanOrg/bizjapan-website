@@ -48,5 +48,10 @@
       "title": "University",
       "desc": "Students from various universities gather at Bizjapan, such as the University of Tokyo, Keio University, Waseda University, etc. Some even come from universities in Kansai area."
     }
+  },
+  "platform": {
+    "jumpjapan": "Providing the real information about studying and working in Japan with students abroad.",
+    "mxspace": "Holding space medicine study tours during long holidays in spring and summer In order to realize 'The world guaranteed quality of space life (QOSL)'.",
+    "nichy": "Promoting exchange in terms of human resources between Japan and China by connecting Japanese university students and Chinese companies."
   }
 }

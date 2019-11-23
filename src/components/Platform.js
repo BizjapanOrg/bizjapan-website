@@ -1,5 +1,6 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
+import { useIntl } from "gatsby-plugin-intl";
 
 // Import styled components
 import Container from "./styled/Container";
@@ -35,6 +36,8 @@ const Platform = () => {
     }
   `);
 
+  const intl = useIntl();
+
   return (
     <Container title="Project Platform">
       <Pulse
@@ -55,17 +58,17 @@ const Platform = () => {
         <ProjectCard
           img={data.jumpjapan.childImageSharp.fixed}
           name="Jump Japam"
-          desc="Providing the real information about studying and working in Japan with students abroad."
+          desc={intl.formatMessage({ id: "platform.jumpjapan" })}
         />
         <ProjectCard
           img={data.mxspace.childImageSharp.fixed}
           name="M x Space"
-          desc="Holding space medicine study tours during long holidays in spring and summer In order to realize 'The world guaranteed quality of space life (QOSL)'."
+          desc={intl.formatMessage({ id: "platform.mxspace" })}
         />
         <ProjectCard
           img={data.nichy.childImageSharp.fixed}
           name="Nichy"
-          desc="Promoting exchange in terms of human resources between Japan and China by connecting Japanese university students and Chinese companies."
+          desc={intl.formatMessage({ id: "platform.nichy" })}
         />
       </div>
     </Container>
