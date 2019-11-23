@@ -18,16 +18,12 @@ const FromPresident = () => (
     />
     <img src={president} alt="President" style={{ marginBottom: `2em` }} />
     <p style={{ marginBottom: `2em` }}>
-      <FormattedMessage id="frompresident.first" />
-      <br />
-      <br />
-      <FormattedMessage id="frompresident.second" />
-      <br />
-      <br />
-      <FormattedMessage id="frompresident.third" />
-      <br />
-      <br />
-      <FormattedMessage id="frompresident.fourth" />
+      <FormattedMessage 
+        id="frompresident" 
+        values={{
+          breakingLine: <> <br /> <br /> </>
+        }}
+      />
     </p>
     <h2 style={{ textAlign: `right` }}>
       Hitoshi Kitamura

@@ -16,13 +16,12 @@ const AboutUs = () => {
         }}
       />
       <p>
-        <FormattedMessage id="aboutus.first" />
-        <br />
-        <br />
-        <FormattedMessage id="aboutus.second" />
-        <br />
-        <br />
-        <FormattedMessage id="aboutus.third" />
+        <FormattedMessage
+          id="aboutus"
+          values={{
+            breakingLine: <> <br /> <br /> </>
+          }}
+        />
       </p>
     </Container>
   );

@@ -16,15 +16,12 @@ const WhatIsProject = () => (
     />
     <div>
       <p>
-        <FormattedMessage id="whatisproject.first" />
-        <br />
-        <br />
-
-        <FormattedMessage id="whatisproject.second" />
-        <br />
-        <br />
-
-        <FormattedMessage id="whatisproject.third" />
+        <FormattedMessage 
+          id="whatisproject"
+          values={{
+            breakingLine: <> <br /> <br /> </>
+          }}
+        />
       </p>
     </div>
   </Container>
