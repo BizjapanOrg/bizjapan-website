@@ -43,6 +43,7 @@ const HeaderNavi = () => (
 const NaviItem = styled.li`
   float: left;
   margin-right: 3em;
+  font-family: "DIN alternate", "Ropa Sans", sans-serif;
 `;
 
 const ItemLink = styled(props => (
