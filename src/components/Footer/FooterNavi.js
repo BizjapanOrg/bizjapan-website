@@ -35,7 +35,7 @@ const FooterNavi = () => (
         - JOIN
       </a>
     </NaviItem>
-    <NaviItem key="join">
+    <NaviItem key="contact">
       <a
         style={{ color: `black`, textDecoration: `none` }}
         href="https://docs.google.com/forms/d/e/1FAIpQLScXUlgjMW1PbzsaeOjXm9OfhKS480FOb7b4SRBTvQzlYPIOjQ/viewform?usp=sf_link"
