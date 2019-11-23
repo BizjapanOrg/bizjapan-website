@@ -21,78 +21,63 @@ const FooterSocialMedia = () => (
             marginBottom: `2em`
           }}
         >
-          {data.images.edges.map(image => {
-            switch (image.node.name) {
-              case "note":
-                return (
-                  <li key={image.node.name} style={{ margin: `0` }}>
-                    <a
-                      href="https://note.mu/bizjapan"
-                      aria-label="Check our Note.mu page."
-                    >
-                      <Img
-                        fixed={image.node.childImageSharp.fixed}
-                        imgStyle={{
-                          objectFit: "contain",
-                          objectPosition: "50% 50%"
-                        }}
-                        style={{
-                          width: `2.5em`,
-                          maxWidth: ` 220px`,
-                          margin: `0 4vw`
-                        }}
-                      />
-                    </a>
-                  </li>
-                );
-              case "facebook":
-                return (
-                  <li key={image.node.name} style={{ margin: `0` }}>
-                    <a
-                      href="https://www.facebook.com/Bizjapan.org/"
-                      aria-label="Check our facebook page."
-                    >
-                      <Img
-                        fixed={image.node.childImageSharp.fixed}
-                        imgStyle={{
-                          objectFit: "contain",
-                          objectPosition: "50% 50%"
-                        }}
-                        style={{
-                          width: `2.5em`,
-                          maxWidth: ` 220px`,
-                          margin: `0 4vw`
-                        }}
-                      />
-                    </a>
-                  </li>
-                );
-              case "twitter":
-                return (
-                  <li key={image.node.name} style={{ margin: `0` }}>
-                    <a
-                      href="https://twitter.com/BizjapanOrg"
-                      aria-label="Check our twitter page."
-                    >
-                      <Img
-                        fixed={image.node.childImageSharp.fixed}
-                        imgStyle={{
-                          objectFit: "contain",
-                          objectPosition: "50% 50%"
-                        }}
-                        style={{
-                          width: `2.5em`,
-                          maxWidth: ` 220px`,
-                          margin: `0 4vw`
-                        }}
-                      />
-                    </a>
-                  </li>
-                );
-              default:
-                return console.log("error");
-            }
-          })}
+          <li key={data.note.name} style={{ margin: `0` }}>
+            <a
+              href="https://note.mu/bizjapan"
+              aria-label="Check our Note.mu page."
+            >
+              <Img
+                fixed={data.note.childImageSharp.fixed}
+                imgStyle={{
+                  objectFit: "contain",
+                  objectPosition: "50% 50%"
+                }}
+                style={{
+                  width: `2.5em`,
+                  maxWidth: ` 220px`,
+                  margin: `0 4vw`
+                }}
+              />
+            </a>
+          </li>
+          <li key={data.facebook.name} style={{ margin: `0` }}>
+            <a
+              href="https://www.facebook.com/Bizjapan.org/"
+              aria-label="Check our facebook page."
+            >
+              <Img
+                fixed={data.facebook.childImageSharp.fixed}
+                imgStyle={{
+                  objectFit: "contain",
+                  objectPosition: "50% 50%"
+                }}
+                style={{
+                  width: `2.5em`,
+                  maxWidth: ` 220px`,
+                  margin: `0 4vw`
+                }}
+              />
+            </a>
+          </li>
+          <li key={data.twitter.name} style={{ margin: `0` }}>
+            <a
+              href="https://twitter.com/BizjapanOrg"
+              aria-label="Check our twitter page."
+            >
+              <Img
+                fixed={data.twitter.childImageSharp.fixed}
+                imgStyle={{
+                  objectFit: "contain",
+                  objectPosition: "50% 50%"
+                }}
+                style={{
+                  width: `2.5em`,
+                  maxWidth: ` 220px`,
+                  margin: `0 4vw`
+                }}
+              />
+            </a>
+          </li>
         </ul>
       );
     }}
@@ -102,16 +87,27 @@ const FooterSocialMedia = () => (
 // Import all the logos of social media.
 const socialMediaQuery = graphql`
   query {
-    images: allFile(filter: { relativeDirectory: { eq: "socialmedia" } }) {
-      edges {
-        node {
-          relativePath
-          name
-          childImageSharp {
-            fixed(height: 50) {
-              ...GatsbyImageSharpFixed
-            }
-          }
+    facebook: file(relativePath: { eq: "socialmedia/facebook.png" }) {
+      name
+      childImageSharp {
+        fixed(height: 50) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    note: file(relativePath: { eq: "socialmedia/note.png" }) {
+      name
+      childImageSharp {
+        fixed(height: 50) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    twitter: file(relativePath: { eq: "socialmedia/twitter.png" }) {
+      name
+      childImageSharp {
+        fixed(height: 50) {
+          ...GatsbyImageSharpFixed
         }
       }
     }
