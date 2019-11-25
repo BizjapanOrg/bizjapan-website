@@ -18,7 +18,7 @@ const Language = () => {
 
   return (
     <span
-      style={{ color: `black`, textDecoration: `none` }}
+      style={{ color: `black`, textDecoration: `none`, cursor: `pointer` }}
       aria-label="Change the locale."
       onClick={() => changeLocale(nextlanguage)}
     >
@@ -27,11 +27,30 @@ const Language = () => {
   );
 };
 
-class HeaderNaviMobile extends React.Component {
-  constructor(props) {
-    super(props);
+const Join = () => {
+  const intl = useIntl();
+
+  // Loaded project data depending on the locale.
+  if (intl.locale === "en") {
+    var joinlink = "https://sites.google.com/bizjapan.org/recruiting-en/home_1";
+  } else {
+    joinlink = "https://sites.google.com/bizjapan.org/recruiting-jp/home";
   }
 
+  return (
+    <a
+      style={{ color: `black`, textDecoration: `none` }}
+      href={joinlink}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Check our recruiting portal page."
+    >
+      JOIN
+    </a>
+  );
+};
+
+class HeaderNaviMobile extends React.Component {
   render() {
     return (
       <div
@@ -97,15 +116,7 @@ class HeaderNaviMobile extends React.Component {
               this.props.handleClick();
             }}
           >
-            <a
-              style={{ color: `black`, textDecoration: `none` }}
-              href="https://sites.google.com/bizjapan.org/recruiting-jp/home"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Check our recruiting portal page."
-            >
-              JOIN
-            </a>
+            <Join />
           </NaviItem>
           <NaviItem
             key="language"

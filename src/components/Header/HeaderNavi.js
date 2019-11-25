@@ -9,9 +9,11 @@ const HeaderNavi = () => {
   if (intl.locale === "en") {
     var nextlanguage = "ja";
     var language = "日本語";
+    var joinlink = "https://sites.google.com/bizjapan.org/recruiting-en/home_1";
   } else {
     nextlanguage = "en";
     language = "English";
+    joinlink = "https://sites.google.com/bizjapan.org/recruiting-jp/home";
   }
 
   return (
@@ -40,7 +42,7 @@ const HeaderNavi = () => {
       <NaviItem key="join">
         <a
           style={{ color: `black`, textDecoration: `none` }}
-          href="https://sites.google.com/bizjapan.org/recruiting-jp/home"
+          href={joinlink}
           target="_blank"
           rel="noopener noreferrer"
           aria-label="See our recruiting portal page."
@@ -50,7 +52,7 @@ const HeaderNavi = () => {
       </NaviItem>
       <NaviItem key="language">
         <span
-          style={{ color: `black`, textDecoration: `none` }}
+          style={{ color: `black`, textDecoration: `none`, cursor: `pointer` }}
           aria-label="Change the locale."
           onClick={() => changeLocale(nextlanguage)}
         >
