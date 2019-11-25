@@ -21,7 +21,17 @@ const Contact = () => {
         <FormattedMessage id="contact" />
       </p>
       <div style={{ textAlign: "center" }}>
-        <Button aria-label="Access to the contact form">Send a message!</Button>
+        <Button aria-label="Access to the contact form">
+          <a
+            style={{ textDecoration: `none`, color: `#707070` }}
+            href="https://docs.google.com/forms/d/e/1FAIpQLScXUlgjMW1PbzsaeOjXm9OfhKS480FOb7b4SRBTvQzlYPIOjQ/viewform?usp=sf_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link up with the contact form"
+          >
+            Send a message!
+          </a>
+        </Button>
       </div>
     </Container>
   );
