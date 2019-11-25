@@ -29,11 +29,11 @@ https://hirkame.github.io/bizjapan-new-website/
 ## Usage
 ```bash
 // Clone the repo
-git clone 
+git clone https://github.com/hirkame/bizjapan-new-website.git
 cd bizjapan-website
 // Install dependencies
 npm install
-// Run
+// Run (If you cannot run the following command, please double-check you installed gatsby-cli.)
 gatsby develop
 ```
 
@@ -41,7 +41,7 @@ gatsby develop
 If you have not installed `gatsby-cli` yet, please install it at first! (`npm install -g gatsby-cli`)
 
 ## Contribution
-1. Fork the repo. (https://github.com/hirkame/bizjapan-new-website/)
+1. Fork the repo. 
 2. Create your feature branch. (`git checkout -b my-new-feature`)
 3. Commit your changes. (`git commit -m 'Add some feature'`)
 4. Push to the branch. (`git push origin my-new-feature`)
