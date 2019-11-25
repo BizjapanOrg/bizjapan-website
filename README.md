@@ -5,7 +5,7 @@ This is a website of NPO Bizjapan.
 
 ## Demo
 The following pages were deployed by Github Pages. It reflects codes in `gh-pages` branch.  
-When you want to update it, please fork `gh-pages` branch on your local environment and run `git pull origin develop` and `npm run deploy`.  
+When you want to update it, please fork `gh-pages` branch on your local environment and run `git pull origin develop` and `npm run deploy` in the branch you just forked.  
 https://hirkame.github.io/bizjapan-new-website/
 
 ## Technology
