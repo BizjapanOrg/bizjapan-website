@@ -6,7 +6,7 @@ import Container from "./styled/Container";
 import Pulse from "../images/pulse.svg";
 
 const WhatIsProject = () => (
-  <Container title="What is Project?">
+  <Container title="What is a Project?">
     <Pulse
       style={{
         height: `3em`,
@@ -16,10 +16,15 @@ const WhatIsProject = () => (
     />
     <div>
       <p>
-        <FormattedMessage 
+        <FormattedMessage
           id="whatisproject"
           values={{
-            breakingLine: <> <br /> <br /> </>
+            breakingLine: (
+              <>
+                {" "}
+                <br /> <br />{" "}
+              </>
+            )
           }}
         />
       </p>
