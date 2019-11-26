@@ -30,7 +30,7 @@ https://hirkame.github.io/bizjapan-new-website/
 ```bash
 // Clone the repo
 git clone https://github.com/hirkame/bizjapan-new-website.git
-cd bizjapan-website
+cd bizjapan-new-website
 // Install dependencies
 npm install
 // Run (If you cannot run the following command, please double-check you installed gatsby-cli.)
