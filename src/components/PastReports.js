@@ -1,5 +1,5 @@
 import React from "react";
-import { FormattedMessage } from "gatsby-plugin-intl";
+import { injectIntl, FormattedMessage } from "gatsby-plugin-intl";
 
 // Import styled components
 import Container from "./styled/Container";
@@ -11,7 +11,7 @@ import report2017 from "../images/report/2017.jpg";
 import report2016 from "../images/report/2016.jpg";
 import report2015 from "../images/report/2015.jpg";
 
-const PastReports = () => (
+const PastReports = ({ intl }) => (
   <Container title="Past Reports">
     <Pulse
       style={{
@@ -21,30 +21,31 @@ const PastReports = () => (
       }}
     />
     <p style={{ textAlign: `center`, marginBottom: `2em` }}>
-      <FormattedMessage id="pastreports" />
+      <FormattedMessage id="annualreport.past_desc" />
     </p>
     <table style={{ width: `100%`, borderSpacing: `0` }}>
       <tbody style={{ display: `table-row-group`, verticalAlign: `middle` }}>
         <TableContents
           img={report2017}
-          link="https://drive.google.com/file/d/1amhkSsVRgGh_mF0hQh4eAy2t5qLJj4I_/view"
+          link={intl.formatMessage({ id: "annualreport.2017" })}
           body="Annual Report 2017"
           SameSite="None"
         />
         <TableContents
           img={report2016}
-          link="https://drive.google.com/file/d/0B4Ox1EpBqvCXdUoxb3hPOGhxc28/view"
+          link={intl.formatMessage({ id: "annualreport.2016" })}
           body="Annual Report 2016"
           SameSite="None"
         />
         <TableContents
           img={report2015}
-          link="https://drive.google.com/file/d/0B4Ox1EpBqvCXMU00SE84RFEwNTQ/view"
+          link={intl.formatMessage({ id: "annualreport.2015" })}
           body="Annual Report 2015"
+          SameSite="None"
         />
       </tbody>
     </table>
   </Container>
 );
 
-export default PastReports;
+export default injectIntl(PastReports);

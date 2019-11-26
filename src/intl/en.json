@@ -1,5 +1,10 @@
 {
   "sitedesc": "Bizjapan is a non-profit organization run by university students, which aims to promote student’s entrepreneurship in Japan. We run a lot of innovative projects. Our projects include space medicine, supporting international students coming to Japan, African startups and so on.",
+  "header": {
+    "nextlanguage": "ja",
+    "language": "日本語",
+    "joinlink": "https://sites.google.com/bizjapan.org/recruiting-en/home_1"
+  },
   "aboutus": "Bizjapan is a platform where a wide variety of people gather with a global perspective and entrepreneurship, and a wide variety of projects are running. Bizjapan was founded in 2011 and became an NPO in 2017. We have successfully completed 55 projects so far. {breakingLine} Currently, 30 members from about 10 countries, mainly students from the University of Tokyo, Waseda University, and Keio University, and especially this year, under the slogan “Because we love it.” Ten projects are in progress, from supporting studying abroad, local revitalization, data science, art, to African startups and space medicine. {breakingLine} Bizjapan is an NPO where students beyond the difference of gender, nationality, university, and interest come together. Here, you can pursue a project of your own, with the belief in yourself and your critical eye.",
   "values": {
     "firstvalue": {
@@ -14,8 +19,14 @@
   "partners": "Our activities are supported by the following companies and groups.",
   "contact": "Do you want to know more about us? If you have any questions, please feel free to contact us for any inquiries.",
   "whatisproject": "In Bizjapan, members engage with their interests in the form of “projects.” {breakingLine} “Projects” are done in various ways. Sometimes it can be hosting a workshop aimed towards people outside the community or an event co-hosted with companies. On the other hand it can be a study tour involving many associations or providing workshops exclusively for our members. {breakingLine} The driving force of initiating projects is not a simple “what to do” but rather an intensive process of thinking “what kind of society is ideal for us to live in”. Each project focuses on creating and carrying out their plans to realize it.",
-  "annualreport": "Bizjapan publishes an annual report to introduce members’ activities and event participations, through Project Reports and Partner Introductions. Please have a look to have a grasp of our experiences from the image below.",
-  "pastreports": "You can download past annual reports from here.",
+  "annualreport": {
+    "desc": "Bizjapan publishes an annual report to introduce members’ activities and event participations, through Project Reports and Partner Introductions. Please have a look to have a grasp of our experiences from the image below.",
+    "past_desc": "You can download past annual reports from here.",
+    "2018": "https://drive.google.com/file/d/1hQuBPJQtIK6RK50JSSroBUkVjE2cFIZB/view",
+    "2017": "https://drive.google.com/file/d/1amhkSsVRgGh_mF0hQh4eAy2t5qLJj4I_/view",
+    "2016": "https://drive.google.com/file/d/0B4Ox1EpBqvCXdUoxb3hPOGhxc28/view",
+    "2015": ""
+  },
   "frompresident": "It’s always fantastic when someone talks about their “passion.” I’ve felt this way numerous times looking at the sparkling eyes of Bizjapan members, confident in their “passion.” {breakingLine} But underneath that “passion,” there are surely efforts and struggles hidden from my eyes. I recently came to realize that everyone has a start and is fighting back a bit of fear everyday. {breakingLine} Colorful variations of “passion” gather, meet, and blossom here. Even in a storm, stamped by strangers, the flowers stand open. This garden never fails to offer me comfort, rush, and courage. {breakingLine} Under the motto of “Because we love it.” and with a sense of ownership towards our society, each one of us strives to open up our paths. To continue our role as a platform for entrepreneurs, Bizjapan will keep moving forward.",
   "corporateinfo": {
     "name": {

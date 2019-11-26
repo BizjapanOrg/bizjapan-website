@@ -1,5 +1,5 @@
 import React from "react";
-import { FormattedMessage } from "gatsby-plugin-intl";
+import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
 
 // Import styled components
 import Container from "./styled/Container";
@@ -7,7 +7,7 @@ import Pulse from "../images/pulse.svg";
 
 import report2018 from "../images/report/2018.jpg";
 
-const AboutUs = () => (
+const AboutUs = ({ intl }) => (
   <Container title="Annual Report in 2018">
     <Pulse
       style={{
@@ -17,10 +17,10 @@ const AboutUs = () => (
       }}
     />
     <p style={{ marginBottom: `2em` }}>
-      <FormattedMessage id="annualreport" />
+      <FormattedMessage id="annualreport.desc" />
     </p>
     <a
-      href="https://drive.google.com/file/d/1hQuBPJQtIK6RK50JSSroBUkVjE2cFIZB/view?usp=sharing"
+      href={intl.formatMessage({ id: "annualreport.2018" })}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="See the annuanl report in 2018."
@@ -34,4 +34,4 @@ const AboutUs = () => (
   </Container>
 );
 
-export default AboutUs;
+export default injectIntl(AboutUs);
