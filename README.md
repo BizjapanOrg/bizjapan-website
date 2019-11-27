@@ -6,7 +6,7 @@ This is a website of NPO Bizjapan.
 ## Demo
 The following pages were deployed by Github Pages. It reflects codes in `gh-pages` branch.  
 When you want to update it, please fork `gh-pages` branch on your local environment and run `git pull origin develop` and `npm run deploy` in the branch you just forked.  
-https://hirkame.github.io/bizjapan-new-website/
+https://bizjapanorg.github.io/bizjapan-website/ja/
 
 ## Technology
 * Gatsby
@@ -29,7 +29,7 @@ https://hirkame.github.io/bizjapan-new-website/
 ## Usage
 ```bash
 // Clone the repo
-git clone https://github.com/hirkame/bizjapan-new-website.git
+git clone https://github.com/BizjapanOrg/bizjapan-website.git
 cd bizjapan-new-website
 // Install dependencies
 npm install
