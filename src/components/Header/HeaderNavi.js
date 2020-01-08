@@ -1,20 +1,14 @@
 import React from "react";
-import { useIntl, Link, changeLocale } from "gatsby-plugin-intl";
 import styled from "styled-components";
+import {
+  useIntl,
+  Link,
+  changeLocale,
+  FormattedMessage
+} from "gatsby-plugin-intl";
 
 const HeaderNavi = () => {
   const intl = useIntl();
-
-  // Loaded project data depending on the locale.
-  if (intl.locale === "en") {
-    var nextlanguage = "ja";
-    var language = "日本語";
-    var joinlink = "https://sites.google.com/bizjapan.org/recruiting-en/home_1";
-  } else {
-    nextlanguage = "en";
-    language = "English";
-    joinlink = "https://sites.google.com/bizjapan.org/recruiting-jp/home";
-  }
 
   return (
     <ul
@@ -42,7 +36,7 @@ const HeaderNavi = () => {
       <NaviItem key="join">
         <a
           style={{ color: `black`, textDecoration: `none` }}
-          href={joinlink}
+          href={intl.formatMessage({ id: "header.joinlink" })}
           target="_blank"
           rel="noopener noreferrer"
           aria-label="See our recruiting portal page."
@@ -54,9 +48,11 @@ const HeaderNavi = () => {
         <span
           style={{ color: `black`, textDecoration: `none`, cursor: `pointer` }}
           aria-label="Change the locale."
-          onClick={() => changeLocale(nextlanguage)}
+          onClick={() =>
+            changeLocale(intl.formatMessage({ id: "header.nextlanguage" }))
+          }
         >
-          {language}
+          <FormattedMessage id="header.language" />
         </span>
       </NaviItem>
     </ul>

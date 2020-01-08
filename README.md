@@ -6,7 +6,7 @@ This is a website of NPO Bizjapan.
 ## Demo
 The following pages were deployed by Github Pages. It reflects codes in `gh-pages` branch.  
 When you want to update it, please fork `gh-pages` branch on your local environment and run `git pull origin develop` and `npm run deploy` in the branch you just forked.  
-https://hirkame.github.io/bizjapan-new-website/
+https://bizjapanorg.github.io/bizjapan-website/ja/
 
 ## Technology
 * Gatsby
@@ -29,8 +29,8 @@ https://hirkame.github.io/bizjapan-new-website/
 ## Usage
 ```bash
 // Clone the repo
-git clone https://github.com/hirkame/bizjapan-new-website.git
-cd bizjapan-website
+git clone https://github.com/BizjapanOrg/bizjapan-website.git
+cd bizjapan-new-website
 // Install dependencies
 npm install
 // Run (If you cannot run the following command, please double-check you installed gatsby-cli.)
@@ -45,4 +45,4 @@ If you have not installed `gatsby-cli` yet, please install it at first! (`npm in
 2. Create your feature branch. (`git checkout -b my-new-feature`)
 3. Commit your changes. (`git commit -m 'Add some feature'`)
 4. Push to the branch. (`git push origin my-new-feature`)
-5. Create a new Pull Request.
+5. Create a new Pull Request to `develop` branch.
