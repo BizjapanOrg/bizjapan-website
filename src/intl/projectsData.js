@@ -12,6 +12,12 @@ module.exports = [
       "Holding space medicine study tours during long holidays in spring and summer In order to realize 'The world guaranteed quality of space life (QOSL)'."
   },
   {
+    id: "neoriders",
+    name: "Neoriders Project",
+    desc:
+      "Holding events and providing information about motorcycles to increase the number of young people who have motorcycle licences."
+  },
+  {
     id: "nichy",
     name: "nichy",
     desc:
