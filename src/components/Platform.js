@@ -12,6 +12,13 @@ import Pulse from "../images/pulse.svg";
 const Platform = () => {
   const data = useStaticQuery(graphql`
     query {
+      neoriders: file(relativePath: { eq: "projects/2018/neoriders.png" }) {
+        childImageSharp {
+          fixed(width: 230, height: 160) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
       jumpjapan: file(relativePath: { eq: "projects/2018/jumpjapan.jpg" }) {
         childImageSharp {
           fixed(width: 230, height: 160) {
@@ -20,13 +27,6 @@ const Platform = () => {
         }
       }
       mxspace: file(relativePath: { eq: "projects/2018/mxspace.jpg" }) {
-        childImageSharp {
-          fixed(width: 230, height: 160) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-      nichy: file(relativePath: { eq: "projects/2018/nichy.jpg" }) {
         childImageSharp {
           fixed(width: 230, height: 160) {
             ...GatsbyImageSharpFixed
@@ -56,6 +56,11 @@ const Platform = () => {
         }}
       >
         <ProjectCard
+          img={data.neoriders.childImageSharp.fixed}
+          name="Neoriders Project"
+          desc={intl.formatMessage({ id: "platform.neoriders" })}
+        />
+        <ProjectCard
           img={data.jumpjapan.childImageSharp.fixed}
           name="Jump Japam"
           desc={intl.formatMessage({ id: "platform.jumpjapan" })}
@@ -64,11 +69,6 @@ const Platform = () => {
           img={data.mxspace.childImageSharp.fixed}
           name="M x Space"
           desc={intl.formatMessage({ id: "platform.mxspace" })}
-        />
-        <ProjectCard
-          img={data.nichy.childImageSharp.fixed}
-          name="Nichy"
-          desc={intl.formatMessage({ id: "platform.nichy" })}
         />
       </div>
     </Container>
