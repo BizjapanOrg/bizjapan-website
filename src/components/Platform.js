@@ -62,7 +62,7 @@ const Platform = () => {
         />
         <ProjectCard
           img={data.jumpjapan.childImageSharp.fixed}
-          name="Jump Japam"
+          name="Jump Japan"
           desc={intl.formatMessage({ id: "platform.jumpjapan" })}
         />
         <ProjectCard
