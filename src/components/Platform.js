@@ -12,7 +12,7 @@ import Pulse from "../images/pulse.svg";
 const Platform = () => {
   const data = useStaticQuery(graphql`
     query {
-      LoCCo: file(relativePath: { eq: "projects/2018/neoriders.png" }) {
+      locco: file(relativePath: { eq: "projects/2019/locco.jpg" }) {
         childImageSharp {
           fixed(width: 230, height: 160) {
             ...GatsbyImageSharpFixed
@@ -56,7 +56,7 @@ const Platform = () => {
         }}
       >
         <ProjectCard
-          img={data.LoCCo.childImageSharp.fixed}
+          img={data.locco.childImageSharp.fixed}
           name="LoCCo"
           desc={intl.formatMessage({ id: "platform.locco" })}
         />
