@@ -63,7 +63,7 @@ const Platform = () => {
         <ProjectCard
           img={data.wardrobee.childImageSharp.fixed}
           name="Wardrobe E"
-          desc={intl.formatMessage({ id: "platform.wardrobe e" })}
+          desc={intl.formatMessage({ id: "platform.wardrobee" })}
         />
         <ProjectCard
           img={data.bizcoin.childImageSharp.fixed}
