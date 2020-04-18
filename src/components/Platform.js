@@ -12,21 +12,21 @@ import Pulse from "../images/pulse.svg";
 const Platform = () => {
   const data = useStaticQuery(graphql`
     query {
-      neoriders: file(relativePath: { eq: "projects/2018/neoriders.png" }) {
+      locco: file(relativePath: { eq: "projects/2019/locco.jpg" }) {
         childImageSharp {
           fixed(width: 230, height: 160) {
             ...GatsbyImageSharpFixed
           }
         }
       }
-      jumpjapan: file(relativePath: { eq: "projects/2018/jumpjapan.jpg" }) {
+      wardrobee: file(relativePath: { eq: "projects/2019/wardrobee.jpg" }) {
         childImageSharp {
           fixed(width: 230, height: 160) {
             ...GatsbyImageSharpFixed
           }
         }
       }
-      mxspace: file(relativePath: { eq: "projects/2018/mxspace.jpg" }) {
+      bizcoin: file(relativePath: { eq: "projects/2019/bizcoin.jpg" }) {
         childImageSharp {
           fixed(width: 230, height: 160) {
             ...GatsbyImageSharpFixed
@@ -56,19 +56,19 @@ const Platform = () => {
         }}
       >
         <ProjectCard
-          img={data.neoriders.childImageSharp.fixed}
-          name="Neoriders Project"
-          desc={intl.formatMessage({ id: "platform.neoriders" })}
+          img={data.locco.childImageSharp.fixed}
+          name="LoCCo"
+          desc={intl.formatMessage({ id: "platform.locco" })}
         />
         <ProjectCard
-          img={data.jumpjapan.childImageSharp.fixed}
-          name="Jump Japam"
-          desc={intl.formatMessage({ id: "platform.jumpjapan" })}
+          img={data.wardrobee.childImageSharp.fixed}
+          name="Wardrobe E"
+          desc={intl.formatMessage({ id: "platform.wardrobee" })}
         />
         <ProjectCard
-          img={data.mxspace.childImageSharp.fixed}
-          name="M x Space"
-          desc={intl.formatMessage({ id: "platform.mxspace" })}
+          img={data.bizcoin.childImageSharp.fixed}
+          name="Bizcoin"
+          desc={intl.formatMessage({ id: "platform.bizcoin" })}
         />
       </div>
     </Container>
