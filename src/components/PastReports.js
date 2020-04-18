@@ -7,6 +7,7 @@ import Pulse from "../images/pulse.svg";
 import TableContents from "./styled/TableContents";
 
 // Import Images.
+import report2018 from "../images/report/2018.jpg";
 import report2017 from "../images/report/2017.jpg";
 import report2016 from "../images/report/2016.jpg";
 import report2015 from "../images/report/2015.jpg";
