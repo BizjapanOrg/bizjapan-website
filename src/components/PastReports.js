@@ -26,6 +26,12 @@ const PastReports = ({ intl }) => (
     <table style={{ width: `100%`, borderSpacing: `0` }}>
       <tbody style={{ display: `table-row-group`, verticalAlign: `middle` }}>
         <TableContents
+          img={report2018}
+          link={intl.formatMessage({ id: "annualreport.2018" })}
+          body="Annual Report 2018"
+          SameSite="None"
+        />
+        <TableContents
           img={report2017}
           link={intl.formatMessage({ id: "annualreport.2017" })}
           body="Annual Report 2017"
