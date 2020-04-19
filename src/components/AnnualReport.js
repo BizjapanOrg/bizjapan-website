@@ -5,7 +5,7 @@ import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
 import Container from "./styled/Container";
 import Pulse from "../images/pulse.svg";
 
-import report2018 from "../images/report/2019.jpg";
+import report2019 from "../images/report/2019.jpg";
 
 const AboutUs = ({ intl }) => (
   <Container title="Annual Report in 2019">
