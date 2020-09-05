@@ -36,10 +36,6 @@ const FromPresident = () => {
         <Img
           fixed={data.president.childImageSharp.fixed}
           alt="President"
-          mgStyle={{
-            objectFit: 'contain',
-            objectPosition: '50% 50%'
-          }}
           style={{
             marginBottom: `2em`
           }}
