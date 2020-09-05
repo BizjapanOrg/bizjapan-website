@@ -22,6 +22,8 @@
   "annualreport": {
     "desc": "Bizjapan publishes an annual report to introduce members’ activities and event participations, through Project Reports and Partner Introductions. Please have a look to have a grasp of our experiences from the image below.",
     "past_desc": "You can download past annual reports from here.",
+    "2019": "https://drive.google.com/file/d/1KMtQ5EI11infL3ZUbLSdRr_spx_5rJgl/view",
+    "$comment": "英語版に要変更",
     "2018": "https://drive.google.com/file/d/1hQuBPJQtIK6RK50JSSroBUkVjE2cFIZB/view",
     "2017": "https://drive.google.com/file/d/1amhkSsVRgGh_mF0hQh4eAy2t5qLJj4I_/view",
     "2016": "https://drive.google.com/file/d/0B4Ox1EpBqvCXdUoxb3hPOGhxc28/view",
@@ -61,8 +63,8 @@
     }
   },
   "platform": {
-    "neoriders": "Holding events and providing information about motorcycles to increase the number of young people who have motorcycle licences.",
-    "jumpjapan": "Providing the real information about studying and working in Japan with students abroad.",
-    "mxspace": "Holding space medicine study tours during long holidays in spring and summer In order to realize 'The world guaranteed quality of space life (QOSL)'."
+    "locco": "Aiming for regional revitalization in Japan by resolving regional isses with international students from both local and global perspectives.",
+    "wardrobee": "Finding and creating a new purpose for unwanted clothing. Promoting and providing a platform for unsustainable fashion by introducing \"wardrobe exchange\".",
+    "bizcoin": "Doing research to find an effevtive means of tokens for realizing ideal communities and their implementation."
   }
 }
