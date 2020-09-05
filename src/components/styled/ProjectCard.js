@@ -1,18 +1,20 @@
-import React from "react";
-import styled from "styled-components";
-import Img from "gatsby-image";
+import React from 'react'
+import styled from 'styled-components'
+import Img from 'gatsby-image'
 
 const ProjectCard = props => (
   <ProjectCardStyle>
     <div style={{ borderRadius: `20px 20px 0 0` }}>
       <Img
+        fluid={props.fluid}
         fixed={props.img}
         imgStyle={{
-          objectFit: "contain",
-          objectPosition: "50% 50%"
+          objectFit: 'contain',
+          objectPosition: '50% 50%'
         }}
         style={{
-          borderRadius: "20px 20px 0 0"
+          borderRadius: '20px 20px 0 0',
+          height: '160px'
         }}
       />
     </div>
@@ -21,7 +23,7 @@ const ProjectCard = props => (
       <CardDesc> {props.desc} </CardDesc>
     </div>
   </ProjectCardStyle>
-);
+)
 
 // Define style of ProjectCard
 const ProjectCardStyle = styled.div`
@@ -29,18 +31,18 @@ const ProjectCardStyle = styled.div`
   margin: 0 0.5em 1.45em 0.5em;
   border-radius: 20px;
   box-shadow: 6px 6px 30px 0 rgba(0, 0, 0, 0.16);
-`;
+`
 const CardName = styled.p`
   margin: 0;
-  font-family: "DIN alternate", "Ropa Sans", sans-serif;
+  font-family: 'DIN alternate', 'Ropa Sans', sans-serif;
   font-size: 1.1em;
   font-weight: bold;
   text-align: center;
-`;
+`
 const CardDesc = styled.p`
   margin: 0;
   padding-top: 0.5em;
   font-size: 0.85em;
-`;
+`
 
-export default ProjectCard;
+export default ProjectCard
