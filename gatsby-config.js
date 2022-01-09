@@ -5,7 +5,7 @@ module.exports = {
     author: `NPO Bizjapan`,
     url: "https://bizjapan.org",
     siteUrl: `https://bizjapan.org`,
-    image: "home.jpg", // Path to your image you placed in the 'static' folder
+    image: "home.jpg", // Path to your image you placed in the 'static' folder //test comment
     twitterUsername: "@BizjapanOrg"
   },
   plugins: [
