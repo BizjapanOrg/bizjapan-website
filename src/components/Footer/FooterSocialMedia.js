@@ -40,13 +40,13 @@ const FooterSocialMedia = () => (
               />
             </a>
           </li>
-          <li key={data.facebook.name} style={{ margin: `0` }}>
+          <li key={data.Instagram.name} style={{ margin: `0` }}>
             <a
-              href="https://www.facebook.com/Bizjapan.org/"
-              aria-label="Check our facebook page."
+              href="https://www.instagram.com/bizjapan.gram/"
+              aria-label="Check our Instagram page."
             >
               <Img
-                fixed={data.facebook.childImageSharp.fixed}
+                fixed={data.Instagram.childImageSharp.fixed}
                 imgStyle={{
                   objectFit: "contain",
                   objectPosition: "50% 50%"
