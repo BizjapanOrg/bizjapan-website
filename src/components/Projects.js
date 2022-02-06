@@ -23,7 +23,7 @@ const WhatIsProject = () => {
       // Render all the images.
       render={data => {
         return (
-          <Container title="Projects in 2018">
+          <Container title="Current Projects">
             <Pulse
               style={{
                 height: `3em`,
