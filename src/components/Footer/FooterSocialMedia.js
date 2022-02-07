@@ -40,7 +40,7 @@ const FooterSocialMedia = () => (
               />
             </a>
           </li>
-          <li key={data.Instagram.name} style={{ margin: `0` }}>
+          <li key={data.insta.name} style={{ margin: `0` }}>
             <a
               href="https://www.instagram.com/bizjapan.gram/"
               aria-label="Check our Instagram page."
