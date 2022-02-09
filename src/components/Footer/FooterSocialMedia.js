@@ -87,7 +87,7 @@ const FooterSocialMedia = () => (
 // Import all the logos of social media.
 const socialMediaQuery = graphql`
   query {
-    facebook: file(relativePath: { eq: "socialmedia/facebook.png" }) {
+    insta: file(relativePath: { eq: "socialmedia/insta.png" }) {
       name
       childImageSharp {
         fixed(height: 50) {
