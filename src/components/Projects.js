@@ -64,7 +64,7 @@ const WhatIsProject = () => {
 // Import all the images in partners folder.
 const query = graphql`
   query {
-    images: allFile(filter: { relativeDirectory: { eq: "projects/2018" } }) {
+    images: allFile(filter: { relativeDirectory: { eq: "projects/2022" } }) {
       edges {
         node {
           relativePath

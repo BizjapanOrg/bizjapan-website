@@ -6,6 +6,12 @@ module.exports = [
       "「若者の二輪免許取得者数増加」を目標に掲げ、様々な企画を通してバイクの魅力を若者に伝え、バイク仲間を増やす。"
   },
   {
+    id: "jpn-thai",
+    name: "japan-thailand-project",
+    desc: 
+      "タイの学生との異文化交流を通じて、日泰交流を活発にし、欧米に留まらない真の“グローバル的視野“を培う。"
+  },
+  {
     id: "bar",
     name: "bar_in_childrens_cafe",
     desc: "バーというある種の居場所の中で、中高生が自分の「当たり前の世界」について考えてみるきっかけを作る。"
@@ -39,6 +45,11 @@ module.exports = [
     id: "",
     name: "voice-up-japan-ut",
     desc: ""
+  },
+  {
+    id: "sustainabilitymap",
+    name: "sustainability-map",
+    desc: "持続可能な消費生活の普及を目標に据え、サステイナブル商品を扱うショップを案内する電子ガイドを作成しています。"
   },
   {
     id: "boardgame",
