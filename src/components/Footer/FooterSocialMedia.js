@@ -46,7 +46,7 @@ const FooterSocialMedia = () => (
               aria-label="Check our Instagram page."
             >
               <Img
-                fixed={data.Instagram.childImageSharp.fixed}
+                fixed={data.insta.childImageSharp.fixed}
                 imgStyle={{
                   objectFit: "contain",
                   objectPosition: "50% 50%"
