@@ -24,7 +24,7 @@ const Footer = () => {
               fontFamily: `"DIN alternate", "Ropa Sans", sans-serif`
             }}
           >
-            ©2019 NPO Bizjapan
+            ©2022 NPO Bizjapan
           </p>
           <FooterNavi />
           <FooterSocialMedia />
