@@ -5,10 +5,10 @@ import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
 import Container from "./styled/Container";
 import Pulse from "../images/pulse.svg";
 
-import report2018 from "../images/report/2018.jpg";
+import report2019 from "../images/report/2019.jpg";
 
 const AboutUs = ({ intl }) => (
-  <Container title="Annual Report in 2018">
+  <Container title="Annual Report in 2019">
     <Pulse
       style={{
         height: `3em`,
@@ -20,14 +20,14 @@ const AboutUs = ({ intl }) => (
       <FormattedMessage id="annualreport.desc" />
     </p>
     <a
-      href={intl.formatMessage({ id: "annualreport.2018" })}
+      href={intl.formatMessage({ id: "annualreport.2019" })}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="See the annuanl report in 2018."
+      aria-label="See the annuanl report in 2019."
     >
       <img
-        src={report2018}
-        alt="Annual Report 2018"
+        src={report2019}
+        alt="Annual Report 2019"
         style={{ width: `100%` }}
       />
     </a>

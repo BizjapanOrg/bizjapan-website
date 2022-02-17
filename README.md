@@ -30,7 +30,7 @@ https://bizjapanorg.github.io/bizjapan-website/ja/
 ```bash
 // Clone the repo
 git clone https://github.com/BizjapanOrg/bizjapan-website.git
-cd bizjapan-new-website
+cd bizjapan-website
 // Install dependencies
 npm install
 // Run (If you cannot run the following command, please double-check you installed gatsby-cli.)

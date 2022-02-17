@@ -1,16 +1,5 @@
 module.exports = [
-  {
-    id: "jumpjapan",
-    name: "Jump Japan",
-    desc:
-      "Providing the real information about studying and working in Japan with students abroad."
-  },
-  {
-    id: "mxspace",
-    name: "M x Space",
-    desc:
-      "Holding space medicine study tours during long holidays in spring and summer In order to realize 'The world guaranteed quality of space life (QOSL)'."
-  },
+  
   {
     id: "neoriders",
     name: "Neoriders Project",
@@ -18,66 +7,69 @@ module.exports = [
       "Holding events and providing information about motorcycles to increase the number of young people who have motorcycle licences."
   },
   {
-    id: "nichy",
-    name: "nichy",
-    desc:
-      "Promoting exchange in terms of human resources between Japan and China by connecting Japanese university students and Chinese companies."
+    id: "jpn-thai",
+    name: "japan-thailand-project",
+    desc: 
+      "The opportunity for Japanese and Thai University students to know more about each other through academic discussion and online culture exchange. "
   },
   {
-    id: "locco",
-    name: "LoCCo",
-    desc:
-      "Engaging on social issues of Japanese countryside with “regional revitalization×international students” as a key concept."
+    id: "bar",
+    name: "bar_in_childrens_cafe",
+    desc: "We make a place like a bar for children where they can reflect on themselves in comfort."
   },
   {
-    id: "pizzjapan",
-    name: "Pizzjapan",
-    desc:
-      "Making pizza more familiar. Making the act of cooking pizza as a platform where everyone can enjoy."
+    id: "sampoem",
+    name: "sampoem-spark-middle-east",
+    desc: "Connecting Iran & Japan through Sampo and poems, this project intends to give a chance to think of what we can understand, what we can't understand, and in-betweens."
   },
   {
-    id: "sparkafrica",
-    name: "Spark Africa",
-    desc:
-      "Providing insight into Sub-Saharan Africa’s startups and tech scenes."
+    id: "wakalocal",
+    name: "waka-local",
+    desc: "We run a platform to connect youngsters in urban areas and local areas in the countryside where in need of youngsters’ inspiration."
   },
   {
-    id: "chado",
-    name: "Chadō ~The Way of Life~",
-    desc:
-      "Disseminating and consequently popularizing chadō with the aim of deepening the global understanding of Japanese culture."
+    id: "bizsolve",
+    name: "biz-solve-仮",
+    desc: "This is a project to organize a problem-solving workshop for Bizjapan members and invitees with a job hunting community called SOLVE."
   },
   {
-    id: "japantrip",
-    name: "Japan Trip",
-    desc: "Supplying one-minute lecture videos for Japanese learners."
+    id: "foodchallenge",
+    name: "foodchallenge_recipebook",
+    desc: "We are creating a unique recipe book to teach and think about environmental issues through food. “Create recipes, recreate the world”"
   },
   {
-    id: "artjunction",
-    name: "ART JUNCTION",
-    desc: "Creating a place where one considershow to engage with art."
+    id: "fooddiversity",
+    name: "food-diversity",
+    desc: "We hope to achieve “Food Diversity” by creating a food environment where everyone feels comfortable."
   },
   {
-    id: "careerdesignstudio",
-    name: "Career Design Studio",
-    desc:
-      "Supporting international students and other people from abroad to work in Japan."
+    id: "",
+    name: "voice-up-japan-ut",
+    desc: ""
   },
   {
-    id: "bizx",
-    name: "BizX",
-    desc:
-      "Raising human resources that could cause innovation through teaching data science."
+    id: "sustainabilitymap",
+    name: "sustainability-map",
+    desc: "With a goal to enhance the lifestyle of sustainable shoppers and promote the idea we are creating a e-book on sustainable shopping."
   },
   {
-    id: "hcollege",
-    name: "Hassyadai College",
-    desc:
-      "Supporting students from all over Japan to make life choices by themselves with the help of university students."
+    id: "boardgame",
+    name: "dear-friends",
+    desc: "We are creating an original board game, “Triversi”, which is an expansion of Reversi, though the use of triangular geometry makes the game more complicated and strategic."
   },
   {
-    id: "zeroichisenior",
-    name: "Zero-ichi Senior",
-    desc: "Collaborate with active students and seniors, and make it happen."
+    id: "disinformation-inhibitor",
+    name: "disinformation-inhibitor",
+    desc: "Our goal is to curb the spread of disinformation. We make infographics on controversial topics from a neutral standpoint and post them on SNS. "
+  },
+  {
+    id: "bookwarm",
+    name: "bookwarm",
+    desc: "We aim to provide an opportunity and experience to enjoy reading books.  To tackle this goal, we are holding interactive events both online and in person."
+  },
+  {
+    id: "komad_design",
+    name: "komad_design",
+    desc: "In order to make KOMAD a place where people can interact and learn from each other in various ways, we will design events, communicate with the outside world, and collaborate with external organizations."
   }
 ];

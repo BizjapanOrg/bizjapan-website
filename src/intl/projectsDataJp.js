@@ -1,84 +1,74 @@
 module.exports = [
   {
-    id: "jumpjapan",
-    name: "Jump Japan",
-    desc:
-      "海外学生の日本留学を促進するため、日本留学に関する生の情報を提供し、日本の大学における留学生の増加を目指す。"
-  },
-  {
-    id: "mxspace",
-    name: "M x Space",
-    desc:
-      "医学生向けスタディツアーや、宇宙医学を核とした異分野交流を通して、宇宙医学・宇宙医療をHRの面から振興する。"
-  },
-  {
     id: "neoriders",
     name: "Neoriders Project",
     desc:
       "「若者の二輪免許取得者数増加」を目標に掲げ、様々な企画を通してバイクの魅力を若者に伝え、バイク仲間を増やす。"
   },
   {
-    id: "nichy",
-    name: "nichy",
-    desc:
-      "日本の大学生と中国企業を繋げることによって、日本と中国の人ベースにおける交流を促す。"
+    id: "jpn-thai",
+    name: "japan-thailand-project",
+    desc: 
+      "タイの学生との異文化交流を通じて、日泰交流を活発にし、欧米に留まらない真の“グローバル的視野“を培う。"
   },
   {
-    id: "locco",
-    name: "LoCCo",
-    desc: "地方創生×留学生をコンセプトに、地方の社会課題の解決に取り組む。"
+    id: "bar",
+    name: "bar_in_childrens_cafe",
+    desc: "バーというある種の居場所の中で、中高生が自分の「当たり前の世界」について考えてみるきっかけを作る。"
   },
   {
-    id: "pizzjapan",
-    name: "Pizzjapan",
-    desc:
-      "年に数回、自分たちで作って食べるピザパーティーを実施している。2018年度駒場祭に「東大ピザ部」として出店。"
+    id: "sampoem",
+    name: "sampoem-spark-middle-east",
+    desc: "イランと日本を散歩と詩作で繋ぐことを通し、「わかりあえること、わかりあえないこと、わかりあえるかもしれないこと」について考える。"
   },
   {
-    id: "sparkafrica",
-    name: "Spark Africa",
-    desc:
-      "サブサハラ・アフリカのスタートアップやテックシーンへの洞察を発信する。"
+    id: "wakalocal",
+    name: "waka-local",
+    desc: "地方創生に興味がある都会の若者と、わかもの・そともの・ばかものを求める地域を繋ぐプラットフォームです。"
   },
   {
-    id: "chado",
-    name: "Chadō ~The Way of Life~",
-    desc:
-      "敷居が高くお堅いという茶道のイメージを払拭し、茶道の多面的な魅力を感じられる活動を通じて、世界中に茶道を広めより良い日々を過ごす茶道ファンを増やす。"
+    id: "bizsolve",
+    name: "biz-solve-仮",
+    desc: "SOLVEという就活対策コミュニティを運営している法人様とBizjapanのメンバー及び招待者向けに問題解決ワークショップを開催するためのプロジェクトです。"
   },
   {
-    id: "japantrip",
-    name: "Japan Trip",
-    desc:
-      "日本の言葉や、面白い側面を動画で紹介することを通じ、日本に興味を持つ人、日本ファンを増やすことを目指す。"
+    id: "foodchallenge",
+    name: "foodchallenge_recipebook",
+    desc: "環境問題をテーマにしたクリエイティブなレシピ本を創作するプロジェクト。"
   },
   {
-    id: "artjunction",
-    name: "ART JUNCTION",
-    desc:
-      "誰もが鑑賞する、表現するといった自分に合ったアートとの関わり方を見つけられる環境を作る。"
+    id: "fooddiversity",
+    name: "food-diversity",
+    desc: "誰もが心地よく過ごせる食環境を目指し、「食の多様性」の実現に取り組みます!"
   },
   {
-    id: "careerdesignstudio",
-    name: "Career Design Studio",
-    desc:
-      "日本に住む外国人、留学生が日本の企業との間に感じている雇用機会についての溝を埋め、日本での就職を前向きに捉えるようになるよう支援する。"
+    id: "",
+    name: "voice-up-japan-ut",
+    desc: ""
   },
   {
-    id: "bizx",
-    name: "BizX",
-    desc: "データサイエンスを学び、イノベーション人材を育成する。"
+    id: "sustainabilitymap",
+    name: "sustainability-map",
+    desc: "持続可能な消費生活の普及を目標に据え、サステイナブル商品を扱うショップを案内する電子ガイドを作成しています。"
   },
   {
-    id: "hcollege",
-    name: "Hassyadai College",
-    desc:
-      "日本全国の高校生が自分で自分の人生を選択することを、各地の大学生とともに支援する。"
+    id: "boardgame",
+    name: "dear-friends",
+    desc: "オリジナルボードゲームの制作プロジェクトです。今は「Triversi」という、三角形をテーマにしたリバーシのアレンジゲームを制作中です。"
   },
   {
-    id: "zeroichisenior",
-    name: "ゼロイチシニア",
-    desc:
-      "シニアと若者の世代間交流で日本を盛り上げる。Aflacのシニア層を含む全社員が課題解決能力を身につけるための人材育成プログラムを考案する等、複数の活動を行っている。"
+    id: "disinformation-inhibitor",
+    name: "disinformation-inhibitor",
+    desc: "デマの拡散を防ぐことを目標にしています。論争を引き起こしている話題について中立的な立場からインフォグラフィクスを作り、SNSで啓発活動を行います。"
+  },
+  {
+    id: "bookwarm",
+    name: "bookwarm",
+    desc: "本を通じたアクティブなイベントを開催し、本を楽しむきっかけや体験を届けていきます!「読書」をもっと身近に。ただ本を読んで終わりではなく、その先へ。"
+  },
+  {
+    id: "komad_design",
+    name: "komad_design",
+    desc: "KOMADをコーワーキングスペースとしてだけでなく、多様な形で人が交流し、学び会える場にするために、イベント設計や対外発信・外部との連携などを行います。"
   }
 ];
