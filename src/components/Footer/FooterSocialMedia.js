@@ -40,13 +40,13 @@ const FooterSocialMedia = () => (
               />
             </a>
           </li>
-          <li key={data.facebook.name} style={{ margin: `0` }}>
+          <li key={data.insta.name} style={{ margin: `0` }}>
             <a
-              href="https://www.facebook.com/Bizjapan.org/"
-              aria-label="Check our facebook page."
+              href="https://www.instagram.com/bizjapan.gram/"
+              aria-label="Check our Instagram page."
             >
               <Img
-                fixed={data.facebook.childImageSharp.fixed}
+                fixed={data.insta.childImageSharp.fixed}
                 imgStyle={{
                   objectFit: "contain",
                   objectPosition: "50% 50%"
@@ -87,7 +87,7 @@ const FooterSocialMedia = () => (
 // Import all the logos of social media.
 const socialMediaQuery = graphql`
   query {
-    facebook: file(relativePath: { eq: "socialmedia/facebook.png" }) {
+    insta: file(relativePath: { eq: "socialmedia/insta.png" }) {
       name
       childImageSharp {
         fixed(height: 50) {
