@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 import Container from './styled/Container'
 import { FormattedMessage } from 'gatsby-plugin-intl'
 import Pulse from '../images/pulse.svg'
-import president from '../images/president.jpg'
+import president from '../images/president.JPG'
 import Img from 'gatsby-image'
 const FromPresident = () => {
   const data = useStaticQuery(graphql`
