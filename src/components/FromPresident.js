@@ -5,11 +5,12 @@ import { useStaticQuery, graphql } from 'gatsby'
 import Container from './styled/Container'
 import { FormattedMessage } from 'gatsby-plugin-intl'
 import Pulse from '../images/pulse.svg'
+import president from '../images/president.jpg'
 import Img from 'gatsby-image'
 const FromPresident = () => {
   const data = useStaticQuery(graphql`
     query {
-      president: file(relativePath: { eq: "president.JPG" }) {
+      president: file(relativePath: { eq: "president.jpg" }) {
         childImageSharp {
           fixed(width: 400, height: 550) {
             ...GatsbyImageSharpFixed
