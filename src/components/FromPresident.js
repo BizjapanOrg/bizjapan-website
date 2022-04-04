@@ -10,7 +10,7 @@ import Img from 'gatsby-image'
 const FromPresident = () => {
   const data = useStaticQuery(graphql`
     query {
-      president: file(relativePath: { eq: "president.jpg" }) {
+      president: file(relativePath: { eq: "president.JPG" }) {
         childImageSharp {
           fixed(width: 400, height: 550) {
             ...GatsbyImageSharpFixed
@@ -55,9 +55,9 @@ const FromPresident = () => {
         />
       </p>
       <h2 style={{ textAlign: `right` }}>
-        Housei Wang
+        Taira Nakazawa
         <br />
-        7th Batch President, Bizjapan
+        9th Batch President, Bizjapan
       </h2>
     </Container>
   )
